@@ -12928,7 +12928,7 @@ h1.page-title + .tag-cloud-list {
     -o-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1);
-    content: "回到顶部";
+    content: "Back2Top";
     -webkit-transition: 0.2s;
     -moz-transition: 0.2s;
     -o-transition: 0.2s;

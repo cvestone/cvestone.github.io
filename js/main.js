@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $rightMenu = document.getElementById("rightMenu");
     const mode = document.documentElement.getAttribute('data-theme');
     const menuDarkmodeText = $rightMenu.querySelector(".menu-darkmode-text");
-    menuDarkmodeText.textContent = mode === "light" ? "深色模式" : "浅色模式";
+    menuDarkmodeText.textContent = mode === "light" ? "Dark Mode" : "Light Mode";
   }
   
   // 初始化header
@@ -558,7 +558,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (isInViewPortOfOneNoDis(pageBottomDomFlag || percentage > 90) && currentTop > 20) {
         $navTotop.classList.add("long");
-        $percentBtn.textContent = "返回顶部";
+        $percentBtn.textContent = "Back2Top";
       } else {
         $navTotop.classList.remove("long");
         $percentBtn.textContent = percentage;
@@ -794,9 +794,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menuDarkmodeText = $rightMenu.querySelector(".menu-darkmode-text");
     if (mode === "light") {
-      menuDarkmodeText.textContent = "深色模式";
+      menuDarkmodeText.textContent = "Dark Mode";
     } else {
-      menuDarkmodeText.textContent = "浅色模式";
+      menuDarkmodeText.textContent = "Light Mode";
     }
 
     if (!GLOBAL_CONFIG_SITE.isPost) {
