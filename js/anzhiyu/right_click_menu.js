@@ -361,7 +361,7 @@ function replaceAll(string, search, replace) {
 
 // 百度搜索
 rm.searchBaidu = function () {
-  anzhiyu.snackbarShow("即将跳转到百度搜索", false, 2000);
+  anzhiyu.snackbarShow("Redirecting to Baidu Search", false, 2000);
   setTimeout(function () {
     window.open("https://www.baidu.com/s?wd=" + selectTextNow);
   }, "2000");
@@ -371,7 +371,7 @@ rm.searchBaidu = function () {
 //分享链接
 rm.copyLink = function () {
   rm.rightmenuCopyText(domhref);
-  anzhiyu.snackbarShow("已复制链接地址");
+  anzhiyu.snackbarShow("Copied Link Addr");
 };
 
 function addRightMenuClickEvent() {

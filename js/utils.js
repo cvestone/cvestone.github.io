@@ -605,7 +605,7 @@ const anzhiyu = {
       let message = "";
 
       if (hour >= 0 && hour <= 5) {
-        message = "睡个好觉，保证精力充沛";
+        message = "pwn2life";
       } else if (hour > 5 && hour <= 10) {
         message = "一日之计在于晨";
       } else if (hour > 10 && hour <= 14) {
