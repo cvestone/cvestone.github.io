@@ -331,7 +331,7 @@
         }" data-pjax-state="">${item.title}</a></div>`;
       }
 
-      return `Sorry, we couldn't find a similar article. You may also check out our latest published articles:<br /><div class="ai-recommend">${list}</div>`;
+      return `很抱歉，无法找到类似的文章，你也可以看看本站最新发布的文章：<br /><div class="ai-recommend">${list}</div>`;
     }
 
     let list = "";

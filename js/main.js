@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $rightMenu = document.getElementById("rightMenu");
     const mode = document.documentElement.getAttribute('data-theme');
     const menuDarkmodeText = $rightMenu.querySelector(".menu-darkmode-text");
-    menuDarkmodeText.textContent = mode === "light" ? "Dark Mode" : "Light Mode";
+    menuDarkmodeText.textContent = mode === "light" ? "深色模式" : "浅色模式";
   }
   
   // 初始化header
@@ -794,9 +794,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const menuDarkmodeText = $rightMenu.querySelector(".menu-darkmode-text");
     if (mode === "light") {
-      menuDarkmodeText.textContent = "Dark Mode";
+      menuDarkmodeText.textContent = "深色模式";
     } else {
-      menuDarkmodeText.textContent = "Light Mode";
+      menuDarkmodeText.textContent = "浅色模式";
     }
 
     if (!GLOBAL_CONFIG_SITE.isPost) {

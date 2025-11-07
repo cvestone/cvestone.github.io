@@ -358,7 +358,7 @@ const anzhiyu = {
     rm.hideRightMenu();
     if (rm.downloadimging == false) {
       rm.downloadimging = true;
-      anzhiyu.snackbarShow("Downloading in progress. Please wait.", false, 10000);
+      anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
       setTimeout(function () {
         let image = new Image();
         // 解决跨域 Canvas 污染问题
@@ -377,11 +377,11 @@ const anzhiyu = {
           a.dispatchEvent(event); // 触发a的单击事件
         };
         image.src = imgsrc;
-        anzhiyu.snackbarShow("The image has been embedded with a blind watermark. Please comply with the copyright agreement!");
+        anzhiyu.snackbarShow("图片已添加盲水印，请遵守版权协议");
         rm.downloadimging = false;
       }, "10000");
     } else {
-      anzhiyu.snackbarShow("There is a download in progress, please try again later!");
+      anzhiyu.snackbarShow("有正在进行中的下载，请稍后再试");
     }
   },
   //禁止图片右键单击
@@ -416,15 +416,15 @@ const anzhiyu = {
     if (commentBarrage) {
       if (window.getComputedStyle(commentBarrage).display === "flex") {
         commentBarrage.style.display = "none";
-        anzhiyu.snackbarShow("✨ Comments and bullet comments are disabled.");
-        document.querySelector(".menu-commentBarrage-text").textContent = "Show Top Comments";
+        anzhiyu.snackbarShow("✨ 已关闭评论弹幕");
+        document.querySelector(".menu-commentBarrage-text").textContent = "显示热评";
         document.querySelector("#consoleCommentBarrage").classList.remove("on");
         localStorage.setItem("commentBarrageSwitch", "false");
       } else {
         commentBarrage.style.display = "flex";
-        document.querySelector(".menu-commentBarrage-text").textContent = "Close Top Comments";
+        document.querySelector(".menu-commentBarrage-text").textContent = "关闭热评";
         document.querySelector("#consoleCommentBarrage").classList.add("on");
-        anzhiyu.snackbarShow("✨ Comments and bullet comments are now enabled.");
+        anzhiyu.snackbarShow("✨ 已开启评论弹幕");
         localStorage.removeItem("commentBarrageSwitch");
       }
     }
@@ -605,15 +605,15 @@ const anzhiyu = {
       let message = "";
 
       if (hour >= 0 && hour <= 5) {
-        message = "Get a good night's sleep to stay energized!";
+        message = "睡个好觉，保证精力充沛";
       } else if (hour > 5 && hour <= 10) {
-        message = "The day's work begins in the morning!";
+        message = "一日之计在于晨";
       } else if (hour > 10 && hour <= 14) {
-        message = "You can't work effectively on an empty stomach!";
+        message = "吃饱了才有力气干活";
       } else if (hour > 14 && hour <= 18) {
-        message = "Focus your energy and overcome the challenges!";
+        message = "集中精力，攻克难关";
       } else if (hour > 18 && hour <= 24) {
-        message = "Don't overwork yourself,getting to bed early is healthier!";
+        message = "不要太劳累了，早睡更健康";
       }
 
       return message;
@@ -649,12 +649,12 @@ const anzhiyu = {
       anzhiyu.musicBindEvent();
       anzhiyu_musicFirst = true;
     }
-    let msgPlay = '<i class="anzhiyufont anzhiyu-icon-play"></i><span>Play music</span>';
-    let msgPause = '<i class="anzhiyufont anzhiyu-icon-pause"></i><span>Pause music</span>';
+    let msgPlay = '<i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span>';
+    let msgPause = '<i class="anzhiyufont anzhiyu-icon-pause"></i><span>暂停音乐</span>';
     if (anzhiyu_musicPlaying) {
       navMusicEl.classList.remove("playing");
       document.getElementById("menu-music-toggle").innerHTML = msgPlay;
-      document.getElementById("nav-music-hoverTips").innerHTML = "Music has paused.";
+      document.getElementById("nav-music-hoverTips").innerHTML = "音乐已暂停";
       document.querySelector("#consoleMusic").classList.remove("on");
       anzhiyu_musicPlaying = false;
       navMusicEl.classList.remove("stretch");
@@ -806,7 +806,7 @@ const anzhiyu = {
       }
     }
 
-    console.info("Random song:", selectRandomSong, "This time's random song:", randomSong.name);
+    console.info("已随机歌曲：", selectRandomSong, "本次随机歌曲：", randomSong.name);
   },
   // 音乐节目切换背景
   changeMusicBg: function (isChangeBg = true) {
@@ -915,7 +915,7 @@ const anzhiyu = {
     });
     anMusicRefreshBtn.addEventListener("click", () => {
       localStorage.removeItem("musicData");
-      anzhiyu.snackbarShow("Removed related cached songs");
+      anzhiyu.snackbarShow("已移除相关缓存歌曲");
     });
     anMusicSwitchingBtn.addEventListener("click", () => {
       anzhiyu.changeMusicList();
