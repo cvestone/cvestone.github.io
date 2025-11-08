@@ -607,11 +607,11 @@ const anzhiyu = {
       if (hour >= 0 && hour <= 5) {
         message = "pwn2life";
       } else if (hour > 5 && hour <= 10) {
-        message = "一日之计在于晨";
+        message = "pwn2life";
       } else if (hour > 10 && hour <= 14) {
-        message = "吃饱了才有力气干活";
+        message = "ret2self";
       } else if (hour > 14 && hour <= 18) {
-        message = "集中精力，攻克难关";
+        message = "ret2self";
       } else if (hour > 18 && hour <= 24) {
         message = "pwn2life";
       }

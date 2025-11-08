@@ -694,7 +694,7 @@ document.addEventListener("DOMContentLoaded", function () {
       $tocLink = $cardToc.querySelectorAll(".toc-link");
       isExpand = $cardToc.classList.contains("is-expand");
 
-      // toc元素點擊（old_version）
+      // toc元素點擊
       const tocItemClickFn = e => {
         const target = e.target.closest(".toc-link");
         if (!target) return;
@@ -722,6 +722,61 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       };
     }
+
+    // find head position & add active class
+    const list = $article.querySelectorAll("h1,h2,h3,h4,h5,h6");
+    const filteredHeadings = Array.from(list).filter(heading => heading.id !== "CrawlerTitle");
+    let detectItem = "";
+    const findHeadPosition = function (top) {
+      if (top === 0) {
+        return false;
+      }
+
+      let currentId = "";
+      let currentIndex = "";
+
+      filteredHeadings.forEach(function (ele, index) {
+        if (top > anzhiyu.getEleTop(ele) - 80) {
+          const id = ele.id;
+          currentId = id ? "#" + encodeURI(id) : "";
+          currentIndex = index;
+        }
+      });
+      if (detectItem === currentIndex) return;
+      if (isAnchor) anzhiyu.updateAnchor(currentId);
+      detectItem = currentIndex;
+      if (isToc) {
+        $cardToc.querySelectorAll(".active").forEach(i => {
+          i.classList.remove("active");
+        });
+
+        if (currentId === "") {
+          return;
+        }
+        const currentActive = $tocLink[currentIndex];
+        currentActive.classList.add("active");
+
+        setTimeout(() => {
+          autoScrollToc(currentActive);
+        }, 0);
+
+        if (isExpand) return;
+        let parent = currentActive.parentNode;
+
+        for (; !parent.matches(".toc"); parent = parent.parentNode) {
+          if (parent.matches("li")) parent.classList.add("active");
+        }
+      }
+    };
+
+    // main of scroll
+    const tocScrollFn = anzhiyu.throttle(() => {
+      const currentTop = window.scrollY || document.documentElement.scrollTop;
+      findHeadPosition(currentTop);
+    }, 100);
+
+    anzhiyu.addEventListenerPjax(window, "scroll", tocScrollFn, { passive: true });
+  };
 
   const handleThemeChange = mode => {
     const globalFn = window.globalFn || {};
