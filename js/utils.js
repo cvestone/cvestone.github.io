@@ -358,7 +358,7 @@ const anzhiyu = {
     rm.hideRightMenu();
     if (rm.downloadimging == false) {
       rm.downloadimging = true;
-      anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+      anzhiyu.snackbarShow("Downloading, please wait..", false, 10000);
       setTimeout(function () {
         let image = new Image();
         // 解决跨域 Canvas 污染问题
@@ -377,11 +377,11 @@ const anzhiyu = {
           a.dispatchEvent(event); // 触发a的单击事件
         };
         image.src = imgsrc;
-        anzhiyu.snackbarShow("图片已添加盲水印，请遵守版权协议");
+        anzhiyu.snackbarShow("The image has been embedded with a blind watermark. Please comply with the copyright agreement");
         rm.downloadimging = false;
       }, "10000");
     } else {
-      anzhiyu.snackbarShow("有正在进行中的下载，请稍后再试");
+      anzhiyu.snackbarShow("There is a download in progress, please try again later");
     }
   },
   //禁止图片右键单击

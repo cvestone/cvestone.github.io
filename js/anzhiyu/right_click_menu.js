@@ -178,14 +178,14 @@ rm.downloadimging = false;
 
 // 复制图片到剪贴板
 rm.writeClipImg = function (imgsrc) {
-  console.log("按下复制");
+  console.log("Press to copy");
   rm.hideRightMenu();
-  anzhiyu.snackbarShow("正在下载中，请稍后", false, 10000);
+  anzhiyu.snackbarShow("Downloading, please wait..", false, 10000);
   if (rm.downloadimging == false) {
     rm.downloadimging = true;
     setTimeout(function () {
       copyImage(imgsrc);
-      anzhiyu.snackbarShow("复制成功！图片已添加盲水印，请遵守版权协议");
+      anzhiyu.snackbarShow("Copy successful! The image has been embedded with a blind watermark. Please comply with the copyright agreement");
       rm.downloadimging = false;
     }, "10000");
   }
@@ -472,7 +472,7 @@ function addRightMenuClickEvent() {
 
   document.getElementById("menu-music-copyMusicName").addEventListener("click", function () {
     rm.rightmenuCopyText(anzhiyu.musicGetName());
-    anzhiyu.snackbarShow("复制歌曲名称成功", false, 3000);
+    anzhiyu.snackbarShow("Successfully copied song title", false, 3000);
   });
 }
 
