@@ -1,0 +1,886 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>251030_dragosCTF learning record | null</title><meta name="keywords" content="Learning Records,Continuously Updated"><meta name="author" content="cvestone"><meta name="copyright" content="cvestone"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="251030_dragosCTF learning record"><meta name="application-name" content="251030_dragosCTF learning record"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="251030_dragosCTF learning record"><meta property="og:url" content="https://cvestone.github.io/articles/wp/251030_dragosCTF%20learning%20record.html"><meta property="og:site_name"><meta property="og:description" content="251030_dragosCTF learning record"><meta property="og:locale" content="en"><meta property="og:image" content="https://imgapi.xl0408.top/index.php?_r_=131654b6-bf8d-2372-a315-eb1ee11ece03"><meta property="article:author" content="cvestone"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://imgapi.xl0408.top/index.php?_r_=131654b6-bf8d-2372-a315-eb1ee11ece03"><meta name="description" content="251030_dragosCTF learning record"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://cvestone.github.io/articles/wp/251030_dragosCTF%20learning%20record.html"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="var(--anzhiyu-main)"/><link rel="mask-icon" href="/img/siteicon/apple-icon-180.png" color="#5bbad5"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/apple-icon-180.png"/><link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/siteicon/apple-icon-180.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/16.png"/><link rel="bookmark" href="/img/siteicon/apple-icon-180.png"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1290-2796.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2796-1290.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1179-2556.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2556-1179.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"Friends","addFriendPlaceholder":"Name:\nDesc:\nLink(must be ur real blog link):\nAvatar(pls provide the clearest possible image):\n"},
+  peoplecanvas: {"enable":true,"img":"https://raw.githubusercontent.com/cvestone/stonepic/main/bg/tanjiro-kamado-4334x2160-20019.jpg"},
+  postHeadAiDescription: {"enable":true,"gptName":"cv3stOnE","mode":"local","switchBtn":true,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":null,"Referer":"https://cvestone.github.io"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w ！","backTitle":"♪(^∇^*)！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: 'https://twico-cvestones-projects.vercel.app',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: false,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":["🕵🏻‍♂️ forensics","👾 pwn","☠︎ reverse","🌐 web","🎲 misc","🩻 steganography","👁️‍🗨️ osint","🎭 crypto"]},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":true,"limitCount":50,"languages":{"author":"Author: cvestone","link":"Link: ","source":"Source: null","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '',
+  title: '251030_dragosCTF learning record',
+  postAI: 'false',
+  pageFillDescription: 'In the full-stack CTF player program this article will be continuously updated with recreated learning content, Attachments, EventInfo, Dragos Trivia, Dragos Trivia - Q1, Desc, Dragos Trivia - Q2, Desc, Dragos Trivia - Q3, Desc, Dragos Trivia - Q4, Desc, Phishing amp Initial Access, Undercover Ops(√), Desc, Key PointsSMB Protocol Traffic Analysis (Object Export), Where are you going?, Desc, Key PointsAnalysis of Malicious Software Reverse Shell Traffic, ICS Windows Event Log Analysis, Home Improvement, Desc, Key Points, College it ain’t easy, Desc, Key Points, ICS PCAP Analysis, Network Capture INT, Desc, Key Points, First of Many, Desc, Key Points, Corrupted Network Capture, Desc, Key Points, Silly Jackals PCAPs are for Kids!, Desc, Key Points, Binary Analysis, Mortimer’s Admin Utility 1, Desc, Key Points, Mortimer’s Admin Utility 2, Desc, Key Points, Mortimer’s Admin Utility 3, Desc, Key Points, Reverse Engineering amp PCAP Analysis, Kiddy Tags - 1, Desc, Key Points, Kiddy Tags - 2, Desc, Key Points, Kiddy Tags - 3, Desc, Key Points, Forensics Analysis, δραπετεύω, Desc, Key Points',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-12 14:15:11',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script><meta name="generator" content="Hexo 8.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title"></div><div class="back-menu-list"><a class="back-menu-item" href="/null"><img class="back-menu-item-icon"/><span class="back-menu-item-text"></span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">project</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="AnzhiyuImages"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="AnzhiyuImages"/><span class="back-menu-item-text">AnzhiyuImages</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title"></div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Home</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> BackHomepage</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Articles</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> Tunnel</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> Category</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> Tag</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> FriendLinks</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> FriendSpace</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> Moments</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> MessageBoard</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Mine</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> MusicHall</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> AnimationPage</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> Album</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> AirConditioner</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> About</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> AboutMe</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> Essay</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> Wander</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> My Arsenal</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="Randomly go to an article" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="Center Console" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/null" target="_blank"><img class="post-qr-code-img" src="/null"/></a><div class="post-qr-code-desc"></div></li><li class="reward-item"><a href="/null" target="_blank"><img class="post-qr-code-img" alt="Alipay" src="/null"/></a><div class="post-qr-code-desc">Alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">Interaction</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">Point of interest</div><span class="author-content-item-title">Find the field you’re interested in</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Continuously-Updated/" style="font-size: 1.05rem;">Continuously Updated<sup>4</sup></a><a href="/tags/Learning-Records/" style="font-size: 1.05rem;">Learning Records<sup>4</sup></a><a href="/tags/ctftime/" style="font-size: 1.05rem;">ctftime<sup>3</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">3</span><span>articles</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>articles</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="Display Mode Switch" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="Sidebar Display Control"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="Hotkey Toggle"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">Original</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF-events/" itemprop="url">CTF events</a><i class="anzhiyufont anzhiyu-icon-angle-right post-meta-separator"></i><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF-events/writeups/" itemprop="url">writeups</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/Learning-Records/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>Learning Records</span></a><a class="article-meta__tags" href="/tags/Continuously-Updated/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>Continuously Updated</span></a></span></div></div><h1 class="post-title" itemprop="name headline">251030_dragosCTF learning record</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2025-11-12T00:00:00.000Z" title="Created 2025-11-12 00:00:00">2025-11-12</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-11-12T14:15:11.929Z" title="Updated 2025-11-12 14:15:11">2025-11-12</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="251030_dragosCTF learning record"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">Post View:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为United States"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>United States</span><span class="post-meta-separator"></span><span class="post-meta-commentcount"><i class="anzhiyufont anzhiyu-icon-comments post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/articles/wp/251030_dragosCTF%20learning%20record.html#post-comment" tabindex="-1"><span id="twikoo-count"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://imgapi.xl0408.top/index.php?_r_=131654b6-bf8d-2372-a315-eb1ee11ece03"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://cvestone.github.io/articles/wp/251030_dragosCTF%20learning%20record.html"><header><a class="post-meta-categories" href="/categories/CTF-events/" itemprop="url">CTF events</a><a class="post-meta-categories" href="/categories/CTF-events/writeups/" itemprop="url">writeups</a><a href="/tags/Learning-Records/" tabindex="-1" itemprop="url">Learning Records</a><a href="/tags/Continuously-Updated/" tabindex="-1" itemprop="url">Continuously Updated</a><h1 id="CrawlerTitle" itemprop="name headline">251030_dragosCTF learning record</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">cvestone</span><time itemprop="dateCreated datePublished" datetime="2025-11-12T00:00:00.000Z" title="Created 2025-11-12 00:00:00">2025-11-12</time><time itemprop="dateCreated datePublished" datetime="2025-11-12T14:15:11.929Z" title="Updated 2025-11-12 14:15:11">2025-11-12</time></header><!-- toc -->
+
+<ul>
+<li><a href="#attachments">Attachments</a></li>
+<li><a href="#eventinfo">EventInfo</a></li>
+<li><a href="#dragos-trivia">Dragos Trivia</a><ul>
+<li><a href="#dragos-trivia-q1">Dragos Trivia - Q1</a><ul>
+<li><a href="#desc">Desc</a></li>
+</ul>
+</li>
+<li><a href="#dragos-trivia-q2">Dragos Trivia - Q2</a><ul>
+<li><a href="#desc-1">Desc</a></li>
+</ul>
+</li>
+<li><a href="#dragos-trivia-q3">Dragos Trivia - Q3</a><ul>
+<li><a href="#desc-2">Desc</a></li>
+</ul>
+</li>
+<li><a href="#dragos-trivia-q4">Dragos Trivia - Q4</a><ul>
+<li><a href="#desc-3">Desc</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#phishing-initial-access">Phishing &amp; Initial Access</a><ul>
+<li><a href="#undercover-ops">Undercover Ops(√)</a><ul>
+<li><a href="#desc-4">Desc</a></li>
+<li><a href="#key-pointssmb-protocol-traffic-analysis-object-export">Key Points:SMB Protocol Traffic Analysis (Object Export)</a></li>
+</ul>
+</li>
+<li><a href="#where-are-you-going">Where are you going?</a><ul>
+<li><a href="#desc-5">Desc</a></li>
+<li><a href="#key-pointsanalysis-of-malicious-software-reverse-shell-traffic">Key Points:Analysis of Malicious Software Reverse Shell Traffic</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#ics-windows-event-log-analysis">ICS Windows Event Log Analysis</a><ul>
+<li><a href="#home-improvement">Home Improvement</a><ul>
+<li><a href="#desc-6">Desc</a></li>
+<li><a href="#key-points">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#college-it-aint-easy">College, it ain’t easy</a><ul>
+<li><a href="#desc-7">Desc</a></li>
+<li><a href="#key-points-1">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#ics-pcap-analysis">ICS PCAP Analysis</a><ul>
+<li><a href="#network-capture-int">Network Capture INT</a><ul>
+<li><a href="#desc-8">Desc</a></li>
+<li><a href="#key-points-2">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#first-of-many">First of Many</a><ul>
+<li><a href="#desc-9">Desc</a></li>
+<li><a href="#key-points-3">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#corrupted-network-capture">Corrupted Network Capture</a><ul>
+<li><a href="#desc-10">Desc</a></li>
+<li><a href="#key-points-4">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#silly-jackals-pcaps-are-for-kids">Silly Jackals, PCAPs are for Kids!</a><ul>
+<li><a href="#desc-11">Desc</a></li>
+<li><a href="#key-points-5">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#binary-analysis">Binary Analysis</a><ul>
+<li><a href="#mortimers-admin-utility-1">Mortimer’s Admin Utility 1</a><ul>
+<li><a href="#desc-12">Desc</a></li>
+<li><a href="#key-points-6">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#mortimers-admin-utility-2">Mortimer’s Admin Utility 2</a><ul>
+<li><a href="#desc-13">Desc</a></li>
+<li><a href="#key-points-7">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#mortimers-admin-utility-3">Mortimer’s Admin Utility 3</a><ul>
+<li><a href="#desc-14">Desc</a></li>
+<li><a href="#key-points-8">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#reverse-engineering-pcap-analysis">Reverse Engineering &amp; PCAP Analysis</a><ul>
+<li><a href="#kiddy-tags-1">Kiddy Tags - 1</a><ul>
+<li><a href="#desc-15">Desc</a></li>
+<li><a href="#key-points-9">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#kiddy-tags-2">Kiddy Tags - 2</a><ul>
+<li><a href="#desc-16">Desc</a></li>
+<li><a href="#key-points-10">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#kiddy-tags-3">Kiddy Tags - 3</a><ul>
+<li><a href="#desc-17">Desc</a></li>
+<li><a href="#key-points-11">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#forensics-analysis">Forensics Analysis</a><ul>
+<li><a href="#%CE%B4%CF%81%CE%B1%CF%80%CE%B5%CF%84%CE%B5%CF%8D%CF%89">δραπετεύω</a><ul>
+<li><a href="#desc-18">Desc</a></li>
+<li><a href="#key-points-12">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<h1><span id="in-the-full-stack-ctf-player-program-this-article-will-be-continuously-updated-with-recreated-learning-content">In the full-stack CTF player program, this article will be continuously updated with recreated learning content</span></h1>
+
+<h1><span id="attachments">Attachments</span></h1><p><a target="_blank" rel="noopener" href="https://github.com/cvestone/cvestone.github.io/releases/tag/25_dragosCTF">Release 251030_dragosCTF · cvestone&#x2F;cvestone.github.io · GitHub</a></p>
+<h1><span id="eventinfo">EventInfo</span></h1><p><a target="_blank" rel="noopener" href="https://www.dragos.com/blog/2025-dragos-capture-the-flag-ctf-competition-summary-results">2025 Dragos Capture the Flag (CTF) Competition Summary &amp; Results | Dragos</a></p>
+<h1><span id="dragos-trivia">Dragos Trivia</span></h1><h2><span id="dragos-trivia-q1">Dragos Trivia - Q1</span></h2><h3><span id="desc">Desc</span></h3><p>The 9th Annual Year In Review OT&#x2F;ICS Cybersecurity Report (2025) report summarizes cybersecurity headlines, the ICS&#x2F;OT threat landscape, case studies from the Dragos frontlines, and security trends seen at industrial organizations. Dragos tracked 23 threat groups targeting industrial control organizations.</p>
+<p>How many threat groups were active in 2024?</p>
+<p>▼ View Hint<br>Head over to the Dragos website and look at the resources.</p>
+<hr>
+<h2><span id="dragos-trivia-q2">Dragos Trivia - Q2</span></h2><h3><span id="desc">Desc</span></h3><p>Which Ransomware group was the sixth most active  group that Dragos tracked in 2024?</p>
+<hr>
+<h2><span id="dragos-trivia-q3">Dragos Trivia - Q3</span></h2><h3><span id="desc">Desc</span></h3><p>Dragos tracked new Threat Groups in 2024. Which new Threat Group has been known to affect the Rail Industry?</p>
+<hr>
+<h2><span id="dragos-trivia-q4">Dragos Trivia - Q4</span></h2><h3><span id="desc">Desc</span></h3><p>Investigators found that attackers gained access to ACME’s vendor network through a phishing email targeting a contractor, allowing lateral movement into poorly segmented industrial systems.</p>
+<p>What critical security control, as defined by the 5CCs, could have prevented this attack from escalating into an OT compromise, according to Dragos’s guidance on KAMACITE?</p>
+<p>▼ View Hint<br>Open YIR  </p>
+<p>▼ View Hint<br>Review the KAMACITE Technical Update  </p>
+<p>▼ View Hint<br>Review the SANS ICS 5 Critical Controls</p>
+<hr>
+<h1><span id="phishing-amp-initial-access">Phishing &amp; Initial Access</span></h1><h2><span id="undercover-ops">Undercover Ops(√)</span></h2><h3><span id="desc">Desc</span></h3><p>Use the attached PCAP to answer the next two questions.</p>
+<p>Sophia, a project manager at ACME Corp., just received an email from her “IT team”, informing her that her current Windows 10 host needs to be updated to the latest, approved OS - Windows 11. The “IT team” placed proper instructions in her Downloads directly and asked Sophia to follow the necessary steps to complete the update.</p>
+<p>Reviewing the PCAP will show that multiple files were transferred across the network. What was the first filename transferred onto Sophia’s host?</p>
+<p>▼ View Hint<br>Is there a place in Wireshark where we can view transferred files?</p>
+<h3><span id="key-pointssmb-protocol-traffic-analysis-object-export">Key Points:SMB Protocol Traffic Analysis (Object Export)</span></h3><hr>
+<p>Based on the hint to look for protocols related to network file transfers, the first ones that come to mind are FTP and SMB. Let’s first check the protocol hierarchy:<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/25/20251112211954327.png" alt="image.png"><br>Clearly, only SMB is present. We can directly export the SMB objects:<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/25/20251112212249451.png" alt="image.png"></p>
+<p>This already reveals all the downloaded filenames. According to the chronological order, the first file is as follows:<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/25/20251112212325448.png" alt="image.png"></p>
+<h2><span id="where-are-you-going">Where are you going?</span></h2><h3><span id="desc">Desc</span></h3><p>During the investigation, the ACME IR team identified that two files were shared with Sophia: the original PDF and an EXE. The EXE was never meant to upgrade the operating system to Windows 11, but rather it hosted a malicious, reverse-shell payload.</p>
+<p>What IP Address and Port did this payload call back to?</p>
+<p>Flag Format: IPAddress:Port</p>
+<p>▼ View Hint<br>Wireshark supports communication statistics</p>
+<h3><span id="key-pointsanalysis-of-malicious-software-reverse-shell-traffic">Key Points:Analysis of Malicious Software Reverse Shell Traffic</span></h3><hr>
+<p>Still working with the file from the previous chall.<br>Clearly, this involves malware analysis. Following the hint and conventional approaches, go to <code>Statistics -&gt; Conversations</code>:<br>You can first sort by the <code>Duration</code> of the conversations. The longest duration might indicate potential malicious activity:<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/25/20251112213427749.png" alt="image.png"><br>Here, observing <code>Address B</code>, the first row is an internal IP, which is unlikely to be the callback target for a reverse shell. From an attacker’s perspective, it’s usually an external IP. Therefore, the likely candidate is <code>15.87.58.2</code>:</p>
+<h1><span id="ics-windows-event-log-analysis">ICS Windows Event Log Analysis</span></h1><h2><span id="home-improvement">Home Improvement</span></h2><h3><span id="desc">Desc</span></h3><p>A victim organization provided two Windows Event log files that they believe contain crucial logs containing information that shows how the adversaries brought offensive tools into the environment. They have provided you with these files for analysis.</p>
+<p>What living-off-the-land tool did the adversary use to help bring a tool into the environment?</p>
+<p>flag format: flag[xxxxxxxxxx] or xxxxxxxxxx</p>
+<p>▼ View Hint<br>SABLOL</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="college-it-aint-easy">College, it ain’t easy</span></h2><h3><span id="desc">Desc</span></h3><p>After identifying the technique the Ember Jackals used to transfer an offensive tool into the environment, we still don’t know what the tool is or what it does. Adversaries often rename or obfuscate tools to evade defenses.</p>
+<p>However, there’s a way to recover the tool and identify its true name and function. Use the Security.evtx, PowerShellLogs.evtx, or PowerShellLogs.csv files to identify the tool.</p>
+<p>What is the codename of the tool the adversary transferred into the environment?</p>
+<p>Flag Format: flag[lots of strings]</p>
+<p>▼ Unlock Hint for 1 point</p>
+<p>The adversary already used the command to reassemble the executable. You just have to replicate it.</p>
+<p>▼ Unlock Hint for 1 point</p>
+<p>This problem can be solved manually, but that will be an incredibly tedious task with 1009 sections. Try automating your analysis.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="ics-pcap-analysis">ICS PCAP Analysis</span></h1><h2><span id="network-capture-int">Network Capture INT</span></h2><h3><span id="desc">Desc</span></h3><p>Would you kindly identify the full Operating System name, version, and build number of the client machine that this PCAPNG was captured on?</p>
+<p>Flag Format: xx-bit Windows xx (xxxx), build xxxxx</p>
+<p>Free Hint: There are more than one interface and there are multiple builds in the attached PCAP.</p>
+<p>▼ View Hint<br>Every packet is captured from a specific Interface id.</p>
+<p>▼ View Hint<br>Each Interface device has its own Interface Description Block.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="first-of-many">First of Many</span></h2><h3><span id="desc">Desc</span></h3><p>The Ember Jackals have corrupted a.txt file that was retrieved over the network by one of our admins.</p>
+<p>We need to identify the .txt file and extract out any hidden messages the Ember Jackals have graffitied inside.</p>
+<p>Flag Format: LONGSTRINGALLTOGETHER</p>
+<p>▼ View Hint<br>There is a way to extract files detected by Wireshark in the UI.</p>
+<p>▼ View Hint<br>Finding the file transfer in Wireshark may be helpful to see what is going on.</p>
+<p>▼ View Hint<br>The file extension of the file in question is “.txt”.</p>
+<p>▼ View Hint<br>Concatenate multiple messages together, if any.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="corrupted-network-capture">Corrupted Network Capture</span></h2><h3><span id="desc">Desc</span></h3><p>Ember Jackals have corrupted a network capture file that may contain information on when they first began gathering info about our network. Help us restore the file to working order and recover the response data in the protocol capture.</p>
+<p>What is the timestamp of the response packet?</p>
+<p>Flag Format: Mmm DD, YYYY HH:MM:SS</p>
+<p>▼ View Hint<br>It looks like the beginning portion of the file is corrupted  </p>
+<p>▼ View Hint<br>Recover or recreate a Section Header Block  </p>
+<p>▼ View Hint<br>The timestamp must be set to the correct epoch (What epoch value does the TIME protocol use?)</p>
+<p>▼ View Hint<br><a target="_blank" rel="noopener" href="https://github.com/wireshark/wireshark/blob/8bbd491f0f39640e9ff84ec608e77e80b5021b93/epan/dissectors/packet-time.c#L69">wireshark&#x2F;epan&#x2F;dissectors&#x2F;packet-time.c at 8bbd491f0f39640e9ff84ec608e77e80b5021b93 · wireshark&#x2F;wireshark · GitHub</a></p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="silly-jackals-pcaps-are-for-kids">Silly Jackals, PCAPs are for Kids!</span></h2><h3><span id="desc">Desc</span></h3><p>Ember Jackals have been probing some of our other servers. I have been able to capture some of their traffic but I think I messed up the capture somehow.</p>
+<p>Please help make sense of the data and retrieve the ‘Originate Timestamp’ field from the ICMP packet so we can identify the time of day this scan occurred.</p>
+<p>Flag Format: dddddddd</p>
+<p>▼ Unlock Hint for 1 point</p>
+<p>Network captures record the LinkType the frames were captured on</p>
+<p>▼ Unlock Hint for 1 point</p>
+<p>ICMP packets only operate on Ethernet network links</p>
+<p>▼ Unlock Hint for 1 point</p>
+<p>The LinkType field for the correct Interface ID needs to be fixed</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="binary-analysis">Binary Analysis</span></h1><h2><span id="mortimers-admin-utility-1">Mortimer’s Admin Utility 1</span></h2><h3><span id="desc">Desc</span></h3><p>Note: Use this attachment to solve the next three challenges.</p>
+<p>In a strange turn of events, the Ember Jackals hired a young Mortimer Smith as an intern and ACME found a utility he left behind on one of the systems.</p>
+<p>First, we need to do some static analysis to make sure there’s no flag-nanigans going on here…</p>
+<p>▼ Unlock Hint for 0 points</p>
+<p>Running it may be dangerous… you should just look at it.</p>
+<p>▼ Unlock Hint for 0 points</p>
+<p>This is way simpler than string theory.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="mortimers-admin-utility-2">Mortimer’s Admin Utility 2</span></h2><h3><span id="desc">Desc</span></h3><p>In a strange turn of events, the Ember Jackals hired a young Mortimer Smith as an intern and ACME found a utility he left behind on one of the systems.</p>
+<p>Yeah it’s definitely shady, and you should definitely not run it on your work computer… but you need the flag so… YOLO!</p>
+<p>Note: A successful run of the tool will create a new local user (if run in Admin prompt). Creation of a new user, nor Admin privileges are required to solve the flag.</p>
+<p>Flag Format: flag{strings here}</p>
+<p>▼ View Hint<br>Hey, uh, uh, 1995 called! They want their “certain year called wanting its blank back” formula back.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="mortimers-admin-utility-3">Mortimer’s Admin Utility 3</span></h2><h3><span id="desc">Desc</span></h3><p>In a strange turn of events, the Ember Jackals hired a young Mortimer Smith as an intern and ACME found a utility he left behind on one of the systems.</p>
+<p>Oh geez… I really need to get Morty’s password. Can you retrieve it?</p>
+<p>Flag Format: flag(datahere)</p>
+<p>▼ Unlock Hint for 1 point</p>
+<p>Good luck bruteforcing it…. we’ll check back with you at DISC 2030.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="reverse-engineering-amp-pcap-analysis">Reverse Engineering &amp; PCAP Analysis</span></h1><h2><span id="kiddy-tags-1">Kiddy Tags - 1</span></h2><h3><span id="desc">Desc</span></h3><p>A security researcher alerted ACME Corp about proprietary information circulating on the dark web. You received a sample and immediately recognized the items. But that doesn’t make sense—why would Ember Jackals want that BIG piece of information? Unless … very very odd …</p>
+<p>Assuming that you need 8 bits for each … hmmm …. item …. what is EJ really communicating?</p>
+<p>Flag format: flag{XXXXXXXXXXX}</p>
+<p>Free Hint: think of the absolute min number of bits.</p>
+<p>Free (BIG) Hint:<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/25/20251112215335857.png" alt="image.png"></p>
+<ul>
+<li><p><strong>View Hint</strong><br>An image is worth 1000 words (or less, sometimes)</p>
+</li>
+<li><p><strong>View Hint</strong><br>Only four colours (RGB+Y) .. that is very old-school  </p>
+</li>
+<li><p><strong>View Hint</strong><br>You can send bits via pulses, waves …. or colours?</p>
+</li>
+</ul>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="kiddy-tags-2">Kiddy Tags - 2</span></h2><h3><span id="desc">Desc</span></h3><p>Kiddy 1 is tough, but your team believes in you, and you are now receiving more artifacts to analyze. This time, it’s a PCAP from a corporate workstation—pretty standard. However, something feels off. It’s time to take a closer look.</p>
+<p>Can you find the configuration file?</p>
+<p>Flag format: flag{XXXXXXXXXXXX}</p>
+<p>▼ View Hint<br>Protocol statistics are pretty useful to understand PCAPs: You can easily spot bytes!</p>
+<p>▼ View Hint<br>I wonder if you can extract the components of the slide. I mean, the real components … the original ones.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="kiddy-tags-3">Kiddy Tags - 3</span></h2><h3><span id="desc">Desc</span></h3><p>Wow, you are making good progress. Your boss decides that you would be the lead investigator for the next issues. And just in time, you received another PCAP with more data to analyze. Seems like our alloys research was getting some unwanted attention. Have fun!</p>
+<p>Can you find the message hidden in the data?!</p>
+<p>Flag Format: flag[XXXXXXXXXXX]</p>
+<p>▼ Unlock Hint for 0 points</p>
+<p>Everytime I heard research I think of DNS, I mean, DNA.</p>
+<p>▼ Unlock Hint for 0 points</p>
+<p>Research, R&amp;D … I am pretty sure I saw something linked to R&amp;D somewhere. </p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="forensics-analysis">Forensics Analysis</span></h1><h2><span id="δραπετεύω">δραπετεύω</span></h2><h3><span id="desc">Desc</span></h3><p>Note: Use the attached artifacts for the following four challenges.</p>
+<p>We found our HMI for the heating system with an open browser Window, making a lot of noise. Someone or something has opened this. <a target="_blank" rel="noopener" href="http://nyan.cat/">http://nyan.cat</a> does not seem to be malicious itself, our research at <a target="_blank" rel="noopener" href="http://http.cat/">http://http.cat</a> also shows nothing weird. We successfully captured a triage collection from the system.</p>
+<p>Can you investigate what might be off with this browser? Can we identify if someone left a “calling card”?</p>
+<p>Flag format: flag{text}</p>
+<p>▼ View Hint<br>What artifacts would a browser produce? We don’t have the full pcap.</p>
+<p>▼ View Hint<br>Have you looked at the screenshot?</p>
+<p>▼ View Hint<br>Does anything stick out? Maybe it needs some rotating.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">cvestone</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="This article is an original piece. Please pay attention to the copyright agreement!" href="https://cvestone.github.io/articles/wp/251030_dragosCTF%20learning%20record.html">Original</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://cvestone.github.io/articles/wp/251030_dragosCTF%20learning%20record.html')">251030_dragosCTF learning record</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="Read this article on mobile"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://cvestone.github.io/articles/wp/251030_dragosCTF%20learning%20record.html"></div><div class="reward-dec">Read this article on mobile</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=251030_dragosCTF learning record&amp;url=https://cvestone.github.io/articles/wp/251030_dragosCTF%20learning%20record.html&amp;pic=https://imgapi.xl0408.top/index.php?_r_=131654b6-bf8d-2372-a315-eb1ee11ece03" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="Copy Link" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0s</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__category-list"><a class="post-meta__box__categoryes" href="/categories/CTF-events/"><span class="categoryes-punctuation"> <i class="anzhiyufont anzhiyu-icon-inbox"></i></span>CTF events<span class="categoryesPageCount">4</span></a><a class="post-meta__box__categoryes" href="/categories/CTF-events/writeups/"><span class="categoryes-punctuation"> <i class="anzhiyufont anzhiyu-icon-inbox"></i></span>writeups<span class="categoryesPageCount">4</span></a></div><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/Learning-Records/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>Learning Records<span class="tagsPageCount">4</span></a><a class="post-meta__box__tags" href="/tags/Continuously-Updated/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>Continuously Updated<span class="tagsPageCount">4</span></a></div></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/articles/wp/251107_infobahnCTF%20learning%20record.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=dcbf7b78-08cc-d0c1-c8ff-a3d9bc15b05b" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">251107_infobahnCTF learning record</div></div></a></div><div class="next-post pull-right"><a href="/articles/wp/251016_QnQSecCTF%20learning%20record.html"><img class="next-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=b3525fed-f035-e188-16f3-6e51ccd37060" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">251016_QnQSecCTF learning record</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/articles/wp/251016_QnQSecCTF%20learning%20record.html" title="251016_QnQSecCTF learning record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=b3525fed-f035-e188-16f3-6e51ccd37060" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-12</div><div class="title">251016_QnQSecCTF learning record</div></div></a></div><div><a href="/articles/wp/251025_deadfaceCTF%20learning%20record.html" title="251025_deadfaceCTF Learning Record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=c38bf853-d7dd-8cd3-7d04-d572beecc09b" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-12</div><div class="title">251025_deadfaceCTF Learning Record</div></div></a></div><div><a href="/articles/wp/251107_infobahnCTF%20learning%20record.html" title="251107_infobahnCTF learning record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=dcbf7b78-08cc-d0c1-c8ff-a3d9bc15b05b" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-12</div><div class="title">251107_infobahnCTF learning record</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> Comment</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)" style="display: none">匿名评论</a><a href="/privacy" style="margin-left: 4px">Privacy Policy</a></div><div class="comment-tips" id="comment-tips"><span>✅ You don't need to delete empty lines, just comment to get the best display effect.</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.discordapp.com/emojis/1359534662757777680.webp?size=240" alt="status"/></div></div><div class="author-info__description">cvestone's blog</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">cvestone</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/cvestone" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>Announcement</span></div><div class="announcement_content"><ul> <li>Full-stack CTF player consolidating knowledge. For any errors or issues in the article, suggestions and discussions are welcome🎃</li>
+</ul></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">In the full-stack CTF player program, this article will be continuously updated with recreated learning content</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Attachments</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">EventInfo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">Dragos Trivia</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.1.</span> <span class="toc-text">Dragos Trivia - Q1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.1.1.</span> <span class="toc-text">Desc</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.2.</span> <span class="toc-text">Dragos Trivia - Q2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.2.1.</span> <span class="toc-text">Desc</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.3.</span> <span class="toc-text">Dragos Trivia - Q3</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.3.1.</span> <span class="toc-text">Desc</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.4.</span> <span class="toc-text">Dragos Trivia - Q4</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.4.1.</span> <span class="toc-text">Desc</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">Phishing &amp; Initial Access</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.1.</span> <span class="toc-text">Undercover Ops(√)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.1.2.</span> <span class="toc-text">Key Points:SMB Protocol Traffic Analysis (Object Export)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.2.</span> <span class="toc-text">Where are you going?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.2.2.</span> <span class="toc-text">Key Points:Analysis of Malicious Software Reverse Shell Traffic</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">6.</span> <span class="toc-text">ICS Windows Event Log Analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">6.1.</span> <span class="toc-text">Home Improvement</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">6.2.</span> <span class="toc-text">College, it ain’t easy</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">7.</span> <span class="toc-text">ICS PCAP Analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.1.</span> <span class="toc-text">Network Capture INT</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.2.</span> <span class="toc-text">First of Many</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.3.</span> <span class="toc-text">Corrupted Network Capture</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.3.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.3.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.4.</span> <span class="toc-text">Silly Jackals, PCAPs are for Kids!</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.4.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.4.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">8.</span> <span class="toc-text">Binary Analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.1.</span> <span class="toc-text">Mortimer’s Admin Utility 1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.2.</span> <span class="toc-text">Mortimer’s Admin Utility 2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.3.</span> <span class="toc-text">Mortimer’s Admin Utility 3</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.3.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.3.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">9.</span> <span class="toc-text">Reverse Engineering &amp; PCAP Analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">9.1.</span> <span class="toc-text">Kiddy Tags - 1</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">9.2.</span> <span class="toc-text">Kiddy Tags - 2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">9.3.</span> <span class="toc-text">Kiddy Tags - 3</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.3.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.3.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">10.</span> <span class="toc-text">Forensics Analysis</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">10.1.</span> <span class="toc-text">δραπετεύω</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">10.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">10.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/251016_QnQSecCTF%20learning%20record.html" title="251016_QnQSecCTF learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=b3525fed-f035-e188-16f3-6e51ccd37060" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="251016_QnQSecCTF learning record"/></a><div class="content"><a class="title" href="/articles/wp/251016_QnQSecCTF%20learning%20record.html" title="251016_QnQSecCTF learning record">251016_QnQSecCTF learning record</a><time datetime="2025-11-12T00:00:00.000Z" title="Created 2025-11-12 00:00:00">2025-11-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/251030_dragosCTF%20learning%20record.html" title="251030_dragosCTF learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=131654b6-bf8d-2372-a315-eb1ee11ece03" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="251030_dragosCTF learning record"/></a><div class="content"><a class="title" href="/articles/wp/251030_dragosCTF%20learning%20record.html" title="251030_dragosCTF learning record">251030_dragosCTF learning record</a><time datetime="2025-11-12T00:00:00.000Z" title="Created 2025-11-12 00:00:00">2025-11-12</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/251107_infobahnCTF%20learning%20record.html" title="251107_infobahnCTF learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=dcbf7b78-08cc-d0c1-c8ff-a3d9bc15b05b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="251107_infobahnCTF learning record"/></a><div class="content"><a class="title" href="/articles/wp/251107_infobahnCTF%20learning%20record.html" title="251107_infobahnCTF learning record">251107_infobahnCTF learning record</a><time datetime="2025-11-08T00:00:00.000Z" title="Created 2025-11-08 00:00:00">2025-11-08</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/251025_deadfaceCTF%20learning%20record.html" title="251025_deadfaceCTF Learning Record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=c38bf853-d7dd-8cd3-7d04-d572beecc09b" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="251025_deadfaceCTF Learning Record"/></a><div class="content"><a class="title" href="/articles/wp/251025_deadfaceCTF%20learning%20record.html" title="251025_deadfaceCTF Learning Record">251025_deadfaceCTF Learning Record</a><time datetime="2025-10-28T00:00:00.000Z" title="Created 2025-10-28 00:00:00">2025-10-28</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="workboard"><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="This site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." title="This site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="This site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."/></a><a class="github-badge" target="_blank" href="https://hexo.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2025 By <a class="footer-bar-link" href="/" title="cvestone" target="_blank">cvestone</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="Thanks for blog theme from anzhiyu.">Thanks for blog theme from anzhiyu.</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">4</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">2</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title"></div><div class="back-menu-list"><a class="back-menu-item" href="/null"><img class="back-menu-item-icon"/><span class="back-menu-item-text"></span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">project</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="AnzhiyuImages"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="AnzhiyuImages"/><span class="back-menu-item-text">AnzhiyuImages</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Home</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> BackHomepage</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Articles</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> Tunnel</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> Category</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> Tag</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> FriendLinks</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> FriendSpace</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> Moments</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> MessageBoard</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Mine</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> MusicHall</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> AnimationPage</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> Album</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> AirConditioner</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> About</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> AboutMe</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> Essay</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> Wander</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> My Arsenal</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Continuously-Updated/" style="font-size: 0.88rem;">Continuously Updated<sup>4</sup></a><a href="/tags/Learning-Records/" style="font-size: 0.88rem;">Learning Records<sup>4</sup></a><a href="/tags/ctftime/" style="font-size: 0.88rem;">ctftime<sup>3</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">Blog Shortcuts</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">Disable</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">On/Off</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">Play/Pause</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">Dark/Light</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">Site</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">Random</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">Return</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">Friendship</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">FriendLinks</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">About</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">Original/Site</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button><button id="go-down" type="button" title="Back To Down"><i class="anzhiyufont anzhiyu-icon-arrow-down"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>Copy Selected Text</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>Paste Text</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>Quote In Comments</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>Open In New Window</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>Copy Link Addr</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>Copy This Image</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>Download This Image</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>Open Image In New Window</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>Site Search</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>Baidu Search</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>Play Music</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>Previous Track</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>Next Track</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;null&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>Check All Songs</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>Copy Songs Name</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>Just wandering around</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>Blog Categories</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>Article Tags</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>Copy Link Addr</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">Close Top Comments</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">Dark Mode</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>Change To Traditional Chinese</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/17/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2025 By 安知鱼 V1.6.15",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 cvestone 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("04/17/2025 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `OMG This site has worked ${dnum} d<span id='runtime'> ${hnum} hr ${mnum} min ${snum} s </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "";
+        img.title = "";
+        img.alt = "";
+      }
+
+      currentTimeHtml = `OMG This site has worked ${dnum} d<span id='runtime'> ${hnum} hr ${mnum} min ${snum} s </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twico-cvestones-projects.vercel.app',
+      region: 'ap-shanghai',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twico-cvestones-projects.vercel.app',
+      region: 'ap-shanghai',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[code]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twico-cvestones-projects.vercel.app',
+        region: 'ap-shanghai',
+        pageSize: 5,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "Unable to get the data, please make sure the settings are correct."
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += 'No Comment'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://cdn.cbd.int/qrcodejs@1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script defer="defer" id="ribbon" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="false"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/click-show-text.min.js" data-mobile="true" data-text="SYSTEM BREACHED 🔥,QUANTUM ENCRYPTION BYPASSED ⚡,NEURAL NETWORK INFILTRATED 🧠,DARKNET ACCESS ACTIVATED 🌑,BIO-METRIC OVERRIDE 🧬,SATELLITE HIJACKED 🛰️,AI GUARDIAN NEUTRALIZED 🤖,CYBER GHOST PROTOCOL 👻,QUANTUM TUNNEL ESTABLISHED 🌀,HOLOGRAPHIC DECOY DEPLOYED ✨,NEURO-LINK INTERCEPTED 🔗,DIMENSIONAL FIREWALL PENETRATED 🌌" data-fontsize="22px" data-random="true" async="async"></script><script src="//code.tidio.co/lifmwojulpmjnrgrsualenpaywfwrcls.js" async="async"></script><script>(() => {
+  const isChatBtn = true
+  const isChatHideShow = true
+
+  if (isChatBtn) {
+    let isShow = false
+    const close = () => {
+      window.tidioChatApi.hide()
+      isShow = false
+      document.body.style.position = 'relative';
+      document.documentElement.style.overflow = 'auto'
+    }
+    
+    const open = () => {
+      window.tidioChatApi.open()
+      window.tidioChatApi.show()
+      isShow = true
+    }
+
+    const onTidioChatApiReady = () => {
+      window.tidioChatApi.hide()
+      window.tidioChatApi.on("close", close)
+    }
+    if (window.tidioChatApi) {
+      window.tidioChatApi.on("ready", onTidioChatApiReady)
+    } else {
+      document.addEventListener("tidioChat-ready", onTidioChatApiReady)
+    }
+
+    window.chatBtnFn = () => {
+      if (!window.tidioChatApi) return
+      isShow ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        window.tidioChatApi && window.tidioChatApi.hide()
+      },
+      show: () => {
+        window.tidioChatApi && window.tidioChatApi.show()
+      }
+    }
+  }
+})()</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
