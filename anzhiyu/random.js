@@ -1,3 +1,3 @@
-var posts=["articles/wp/240705_downunderCTF learning record.html","articles/wp/251016_QnQSecCTF learning record.html","articles/wp/250914_uwsp_POCTF learning record.html","articles/wp/251025_deadfaceCTF learning record.html","articles/wp/251030_dragosCTF learning record.html","articles/wp/251107_infobahnCTF learning record.html","articles/wp/251109_RootCipherCTF learning record.html"];function toRandomPost(){
+var posts=["articles/wp/240705_downunderCTF learning record.html","articles/wp/250914_uwsp_POCTF learning record.html","articles/wp/251016_QnQSecCTF learning record.html","articles/wp/251025_deadfaceCTF learning record.html","articles/wp/251030_dragosCTF learning record.html","articles/wp/251107_infobahnCTF learning record.html","articles/wp/251109_RootCipherCTF learning record.html"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
