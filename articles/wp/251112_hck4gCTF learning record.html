@@ -1,0 +1,987 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"><title>251112_hck4gCTF learning record | null</title><meta name="keywords" content="Learning Records,Continuously Updated"><meta name="author" content="cvestone"><meta name="copyright" content="cvestone"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#f7f9fe"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-touch-fullscreen" content="yes"><meta name="apple-mobile-web-app-title" content="251112_hck4gCTF learning record"><meta name="application-name" content="251112_hck4gCTF learning record"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="#f7f9fe"><meta property="og:type" content="article"><meta property="og:title" content="251112_hck4gCTF learning record"><meta property="og:url" content="https://cvestone.github.io/articles/wp/251112_hck4gCTF%20learning%20record.html"><meta property="og:site_name"><meta property="og:description" content="251112_hck4gCTF learning record"><meta property="og:locale" content="en"><meta property="og:image" content="https://imgapi.xl0408.top/index.php?_r_=8fe20584-bfea-ec67-cd97-97399e838a86"><meta property="article:author" content="cvestone"><meta property="article:tag"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https://imgapi.xl0408.top/index.php?_r_=8fe20584-bfea-ec67-cd97-97399e838a86"><meta name="description" content="251112_hck4gCTF learning record"><link rel="shortcut icon" href="/favicon.ico"><link rel="canonical" href="https://cvestone.github.io/articles/wp/251112_hck4gCTF%20learning%20record.html"><link rel="preconnect" href="//cdn.cbd.int"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="xxx"/><meta name="baidu-site-verification" content="code-xxx"/><meta name="msvalidate.01" content="xxx"/><link rel="manifest" href="/manifest.json"/><meta name="msapplication-TileColor" content="var(--anzhiyu-main)"/><link rel="mask-icon" href="/img/siteicon/apple-icon-180.png" color="#5bbad5"/><link rel="apple-touch-icon" sizes="180x180" href="/img/siteicon/apple-icon-180.png"/><link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/siteicon/apple-icon-180.png"/><link rel="icon" type="image/png" sizes="32x32" href="/img/siteicon/32.png"/><link rel="icon" type="image/png" sizes="16x16" href="/img/siteicon/16.png"/><link rel="bookmark" href="/img/siteicon/apple-icon-180.png"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2388-1668.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1536-2048.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2048-1536.jpg" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1668-2224.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2224-1668.jpg" media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1620-2160.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2160-1620.jpg" media="(device-width: 810px) and (device-height: 1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1290-2796.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2796-1290.jpg" media="(device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1179-2556.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2556-1179.jpg" media="(device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1284-2778.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2778-1284.jpg" media="(device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1170-2532.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2532-1170.jpg" media="(device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1125-2436.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2436-1125.jpg" media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2688.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2688-1242.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-828-1792.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1792-828.jpg" media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1242-2208.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-2208-1242.jpg" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-750-1334.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1334-750.jpg" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-640-1136.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"/><link rel="apple-touch-startup-image" href="/img/siteicon/apple-splash-1136-640.jpg" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"/><link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-tag-plugins-plus@1.0.17/lib/assets/font-awesome-animation.min.css"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.cbd.int/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  linkPageTop: {"enable":true,"title":"Friends","addFriendPlaceholder":"Name:\nDesc:\nLink(must be ur real blog link):\nAvatar(pls provide the clearest possible image):\n"},
+  peoplecanvas: {"enable":true,"img":"https://raw.githubusercontent.com/cvestone/stonepic/main/bg/tanjiro-kamado-4334x2160-20019.jpg"},
+  postHeadAiDescription: {"enable":true,"gptName":"cv3stOnE","mode":"local","switchBtn":true,"btnLink":"https://afdian.net/item/886a79d4db6711eda42a52540025c377","randomNum":3,"basicWordCount":1000,"key":null,"Referer":"https://cvestone.github.io"},
+  diytitle: {"enable":true,"leaveTitle":"w(ﾟДﾟ)w ！","backTitle":"♪(^∇^*)！"},
+  LA51: undefined,
+  greetingBox: undefined,
+  twikooEnvId: 'https://twico-cvestones-projects.vercel.app',
+  commentBarrageConfig:undefined,
+  music_page_default: "nav_music",
+  root: '/',
+  preloader: {"source":3},
+  friends_vue_info: undefined,
+  navMusic: false,
+  mainTone: {"mode":"api","api":"https://img2color-go.vercel.app/api?img=","cover_change":true},
+  authorStatus: {"skills":["🕵🏻‍♂️ forensics","👾 pwn","☠︎ reverse","🌐 web","🎲 misc","🩻 steganography","👁️‍🗨️ osint","🎭 crypto"]},
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    simplehomepage: true,
+    post: false
+  },
+  runtime: 'days',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: {"copy":true,"copyrightEbable":true,"limitCount":50,"languages":{"author":"Author: cvestone","link":"Link: ","source":"Source: null","info":"Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.","copySuccess":"Copy success, copy and reprint please mark the address of this article"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"Traditional Chinese Activated Manually","cht_to_chs":"Simplified Chinese Activated Manually","day_to_night":"Dark Mode Activated Manually","night_to_day":"Light Mode Activated Manually","bgLight":"#425AEF","bgDark":"#1f1f1f","position":"top-center"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.min.js',
+      css: 'https://cdn.cbd.int/flickr-justified-gallery@2.1.2/dist/fjGallery.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: false,
+  shortcutKey: {"enable":true,"delay":100,"shiftDelay":200},
+  autoDarkmode: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  configTitle: '',
+  title: '251112_hck4gCTF learning record',
+  postAI: 'false',
+  pageFillDescription: 'In the full-stack CTF player program this article will be continuously updated with recreated learning content, Attachments, EventInfo, ScoreBoard, crypto, confirm-wire-check, Desc, Key Points, deepdecoder, Desc, Key Points, ancient-roman-secret, Desc, Key Points, pwn, myapp, Desc, Key Points, bird, Desc, Key Points, printer-still-jammed, Desc, Key Points, jammed-printer, Desc, Key Points, getting-full, Desc, .x2Fnc_listener 15.206.70.21337.the exact no. of bytes feeds meanymore makes me choke, Key Points, interpreter, Desc, Key Points, register, Desc, Key Points, mgmt, Desc, Key Points, steganography, the_advocator, Desc, Key Points, paste_aza, Desc, Key Points, forensics, pickers_back_door, Desc, Key Points, f1nding-cl1ents, Desc, Key Points, mobile-bapi, Desc, Key Points, drums, Desc, Key Points, frys-copypasta-nightmare, Desc, Key Points, dumpster, Desc, Key Points, osint, tenet, Desc, Key Points, ghost-of-the-street, Desc, Key Points, dont-be-too-forgetful, Desc, Key Points, theseeker, Desc, Key Points, bridge, Desc, Key Points, web, cloudy_scam, Desc, Key Points, first, Desc, Key Points',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2025-11-17 07:22:36',
+  postMainColor: '',
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#18171d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f7f9fe')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+          const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+          const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+          const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+          if (t === undefined) {
+            if (isLightMode) activateLightMode()
+            else if (isDarkMode) activateDarkMode()
+            else if (isNotSpecified || hasNoSupport) {
+              const now = new Date()
+              const hour = now.getHours()
+              const isNight = hour <= 6 || hour >= 18
+              isNight ? activateDarkMode() : activateLightMode()
+            }
+            window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+              if (saveToLocal.get('theme') === undefined) {
+                e.matches ? activateDarkMode() : activateLightMode()
+              }
+            })
+          } else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><script src="https://fastly.jsdelivr.net/npm/live2d-widgets@1.0.0-rc.6/dist/autoload.js"></script><meta name="generator" content="Hexo 8.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+  endLoading: () => {
+    document.getElementById('loading-box').classList.add("loaded");
+  },
+  initLoading: () => {
+    document.getElementById('loading-box').classList.remove("loaded")
+  }
+}
+window.addEventListener('load',()=> { preloader.endLoading() })
+setTimeout(function(){preloader.endLoading();},10000)
+
+if (true) {
+  document.addEventListener('pjax:send', () => { preloader.initLoading() })
+  document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><div class="back-home-button"><i class="anzhiyufont anzhiyu-icon-grip-vertical"></i><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title"></div><div class="back-menu-list"><a class="back-menu-item" href="/null"><img class="back-menu-item-icon"/><span class="back-menu-item-text"></span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">project</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="AnzhiyuImages"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="AnzhiyuImages"/><span class="back-menu-item-text">AnzhiyuImages</span></a></div></div></div></div><a id="site-name" href="/" accesskey="h"><div class="title"></div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a><div id="he-plugin-simple"></div><script>var WIDGET = {
+  "CONFIG": {
+    "modules": "0124",
+    "background": "2",
+    "tmpColor": "FFFFFF",
+    "tmpSize": "16",
+    "cityColor": "FFFFFF",
+    "citySize": "16",
+    "aqiColor": "E8D87B",
+    "aqiSize": "16",
+    "weatherIconSize": "24",
+    "alertIconSize": "18",
+    "padding": "10px 10px 10px 10px",
+    "shadow": "0",
+    "language": "auto",
+    "borderRadius": "20",
+    "fixed": "true",
+    "vertical": "top",
+    "horizontal": "left",
+    "left": "20",
+    "top": "7.1",
+    "key": "df245676fb434a0691ead1c63341cd94"
+  }
+}
+</script><link rel="stylesheet" href="https://widget.qweather.net/simple/static/css/he-simple.css?v=1.4.0"/><script src="https://widget.qweather.net/simple/static/js/he-simple.js?v=1.4.0"></script></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Home</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> BackHomepage</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Articles</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> Tunnel</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> Category</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> Tag</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> FriendLinks</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> FriendSpace</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> Moments</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> MessageBoard</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Mine</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> MusicHall</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> AnimationPage</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> Album</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> AirConditioner</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> About</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> AboutMe</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> Essay</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> Wander</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> My Arsenal</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="Randomly go to an article" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><input id="center-console" type="checkbox"/><label class="widget" for="center-console" title="Center Console" onclick="anzhiyu.switchConsole();"><i class="left"></i><i class="widget center"></i><i class="widget right"></i></label><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="/null" target="_blank"><img class="post-qr-code-img" src="/null"/></a><div class="post-qr-code-desc"></div></li><li class="reward-item"><a href="/null" target="_blank"><img class="post-qr-code-img" alt="Alipay" src="/null"/></a><div class="post-qr-code-desc">Alipay</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">Interaction</div><span class="author-content-item-title"> Newest Comments</span></div><div class="aside-list"><span>loading...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">Point of interest</div><span class="author-content-item-title">Find the field you’re interested in</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Continuously-Updated/" style="font-size: 1.05rem;">Continuously Updated<sup>10</sup></a><a href="/tags/Learning-Records/" style="font-size: 1.05rem;">Learning Records<sup>10</sup></a><a href="/tags/ctftime/" style="font-size: 1.05rem;">ctftime<sup>8</sup></a></div></div><hr/></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/11/"><span class="card-archive-list-date">November 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">9</span><span>articles</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/10/"><span class="card-archive-list-date">October 2025</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>articles</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="Display Mode Switch" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="Sidebar Display Control"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleKeyboard" onclick="anzhiyu.keyboardToggle()" title="Hotkey Toggle"><a class="keyboard-switch"><i class="anzhiyufont anzhiyu-icon-keyboard"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav><div id="post-info"><div id="post-firstinfo"><div class="meta-firstline"><a class="post-meta-original">Original</a><span class="post-meta-categories"><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF-events/" itemprop="url">CTF events</a><i class="anzhiyufont anzhiyu-icon-angle-right post-meta-separator"></i><i class="anzhiyufont anzhiyu-icon-inbox post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF-events/writeups/" itemprop="url">writeups</a></span><span class="article-meta tags"><a class="article-meta__tags" href="/tags/Learning-Records/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>Learning Records</span></a><a class="article-meta__tags" href="/tags/Continuously-Updated/" tabindex="-1" itemprop="url"> <span> <i class="anzhiyufont anzhiyu-icon-hashtag"></i>Continuously Updated</span></a></span></div></div><h1 class="post-title" itemprop="name headline">251112_hck4gCTF learning record</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="anzhiyufont anzhiyu-icon-calendar-days post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" itemprop="dateCreated datePublished" datetime="2025-11-17T00:00:00.000Z" title="Created 2025-11-17 00:00:00">2025-11-17</time><span class="post-meta-separator"></span><i class="anzhiyufont anzhiyu-icon-history post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" itemprop="dateCreated datePublished" datetime="2025-11-17T07:22:36.402Z" title="Updated 2025-11-17 07:22:36">2025-11-17</time></span></div><div class="meta-secondline"><span class="post-meta-separator"></span><span class="post-meta-pv-cv" id="" data-flag-title="251112_hck4gCTF learning record"><i class="anzhiyufont anzhiyu-icon-fw-eye post-meta-icon"></i><span class="post-meta-label" title="阅读量">Post View:</span><span id="busuanzi_value_page_pv"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></span><span class="post-meta-separator">       </span><span class="post-meta-position" title="作者IP属地为United States"><i class="anzhiyufont anzhiyu-icon-location-dot"></i>United States</span><span class="post-meta-separator"></span><span class="post-meta-commentcount"><i class="anzhiyufont anzhiyu-icon-comments post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/articles/wp/251112_hck4gCTF%20learning%20record.html#post-comment" tabindex="-1"><span id="twikoo-count"><i class="anzhiyufont anzhiyu-icon-spinner anzhiyu-spin"></i></span></a></span></div></div></div><section class="main-hero-waves-area waves-area"><svg class="waves-svg" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M -160 44 c 30 0 58 -18 88 -18 s 58 18 88 18 s 58 -18 88 -18 s 58 18 88 18 v 44 h -352 Z"></path></defs><g class="parallax"><use href="#gentle-wave" x="48" y="0"></use><use href="#gentle-wave" x="48" y="3"></use><use href="#gentle-wave" x="48" y="5"></use><use href="#gentle-wave" x="48" y="7"></use></g></svg></section><div id="post-top-cover"><img class="nolazyload" id="post-top-bg" src="https://imgapi.xl0408.top/index.php?_r_=8fe20584-bfea-ec67-cd97-97399e838a86"></div></header><main id="blog-container"><div class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container" itemscope itemtype="https://cvestone.github.io/articles/wp/251112_hck4gCTF%20learning%20record.html"><header><a class="post-meta-categories" href="/categories/CTF-events/" itemprop="url">CTF events</a><a class="post-meta-categories" href="/categories/CTF-events/writeups/" itemprop="url">writeups</a><a href="/tags/Learning-Records/" tabindex="-1" itemprop="url">Learning Records</a><a href="/tags/Continuously-Updated/" tabindex="-1" itemprop="url">Continuously Updated</a><h1 id="CrawlerTitle" itemprop="name headline">251112_hck4gCTF learning record</h1><span itemprop="author" itemscope itemtype="http://schema.org/Person">cvestone</span><time itemprop="dateCreated datePublished" datetime="2025-11-17T00:00:00.000Z" title="Created 2025-11-17 00:00:00">2025-11-17</time><time itemprop="dateCreated datePublished" datetime="2025-11-17T07:22:36.402Z" title="Updated 2025-11-17 07:22:36">2025-11-17</time></header><!-- toc -->
+
+<ul>
+<li><a href="#attachments">Attachments</a></li>
+<li><a href="#eventinfo">EventInfo</a><ul>
+<li><a href="#scoreboard">ScoreBoard</a></li>
+</ul>
+</li>
+<li><a href="#crypto">crypto</a><ul>
+<li><a href="#confirm-wire-check">confirm-wire-check</a><ul>
+<li><a href="#desc">Desc</a></li>
+<li><a href="#key-points">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#deepdecoder">deepdecoder</a><ul>
+<li><a href="#desc-1">Desc</a></li>
+<li><a href="#key-points-1">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#ancient-roman-secret">ancient-roman-secret</a><ul>
+<li><a href="#desc-2">Desc</a></li>
+<li><a href="#key-points-2">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#pwn">pwn</a><ul>
+<li><a href="#myapp">myapp</a><ul>
+<li><a href="#desc-3">Desc</a></li>
+<li><a href="#key-points-3">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#bird">bird</a><ul>
+<li><a href="#desc-4">Desc</a></li>
+<li><a href="#key-points-4">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#printer-still-jammed">printer-still-jammed</a><ul>
+<li><a href="#desc-5">Desc</a></li>
+<li><a href="#key-points-5">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#jammed-printer">jammed-printer</a><ul>
+<li><a href="#desc-6">Desc</a></li>
+<li><a href="#key-points-6">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#getting-full">getting-full</a><ul>
+<li><a href="#desc-7">Desc</a></li>
+<li><a href="#key-points-7">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#interpreter">interpreter</a><ul>
+<li><a href="#desc-8">Desc</a></li>
+<li><a href="#key-points-8">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#register">register</a><ul>
+<li><a href="#desc-9">Desc</a></li>
+<li><a href="#key-points-9">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#mgmt">mgmt</a><ul>
+<li><a href="#desc-10">Desc</a></li>
+<li><a href="#key-points-10">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#steganography">steganography</a><ul>
+<li><a href="#the_advocator">the_advocator</a><ul>
+<li><a href="#desc-11">Desc</a></li>
+<li><a href="#key-points-11">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#paste_aza">paste_aza</a><ul>
+<li><a href="#desc-12">Desc</a></li>
+<li><a href="#key-points-12">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#forensics">forensics</a><ul>
+<li><a href="#pickers_back_door">pickers_back_door</a><ul>
+<li><a href="#desc-13">Desc</a></li>
+<li><a href="#key-points-13">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#f1nding-cl1ents">f1nding-cl1ents</a><ul>
+<li><a href="#desc-14">Desc</a></li>
+<li><a href="#key-points-14">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#mobile-bapi">mobile-bapi</a><ul>
+<li><a href="#desc-15">Desc</a></li>
+<li><a href="#key-points-15">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#drums">drums</a><ul>
+<li><a href="#desc-16">Desc</a></li>
+<li><a href="#key-points-16">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#frys-copypasta-nightmare">frys-copypasta-nightmare</a><ul>
+<li><a href="#desc-17">Desc</a></li>
+<li><a href="#key-points-17">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#dumpster">dumpster</a><ul>
+<li><a href="#desc-18">Desc</a></li>
+<li><a href="#key-points-18">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#osint">osint</a><ul>
+<li><a href="#tenet">tenet</a><ul>
+<li><a href="#desc-19">Desc</a></li>
+<li><a href="#key-points-19">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#ghost-of-the-street">ghost-of-the-street</a><ul>
+<li><a href="#desc-20">Desc</a></li>
+<li><a href="#key-points-20">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#dont-be-too-forgetful">dont-be-too-forgetful</a><ul>
+<li><a href="#desc-21">Desc</a></li>
+<li><a href="#key-points-21">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#theseeker">theseeker</a><ul>
+<li><a href="#desc-22">Desc</a></li>
+<li><a href="#key-points-22">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#bridge">bridge</a><ul>
+<li><a href="#desc-23">Desc</a></li>
+<li><a href="#key-points-23">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#web">web</a><ul>
+<li><a href="#cloudy_scam">cloudy_scam</a><ul>
+<li><a href="#desc-24">Desc</a></li>
+<li><a href="#key-points-24">Key Points:</a></li>
+</ul>
+</li>
+<li><a href="#first">first</a><ul>
+<li><a href="#desc-25">Desc</a></li>
+<li><a href="#key-points-25">Key Points:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+
+<h1><span id="in-the-full-stack-ctf-player-program-this-article-will-be-continuously-updated-with-recreated-learning-content">In the full-stack CTF player program, this article will be continuously updated with recreated learning content</span></h1>
+
+<h1><span id="attachments">Attachments</span></h1><p><a target="_blank" rel="noopener" href="https://github.com/cvestone/cvestone.github.io/releases/tag/25_hck4gCTF">Release 251112_hck4gCTF · cvestone&#x2F;cvestone.github.io · GitHub</a></p>
+<h1><span id="eventinfo">EventInfo</span></h1><h2><span id="scoreboard">ScoreBoard</span></h2><p>My team 0xfun’s rank in this event - <code>top 1</code>:<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/25/20251117012716320.png" alt="image.png"></p>
+<h1><span id="crypto">crypto</span></h1><h2><span id="confirm-wire-check">confirm-wire-check</span></h2><h3><span id="desc">Desc</span></h3><p>Somewhere in Ojoo&#x2F;Orogun Ibadan Nigeria the market is just waking up.</p>
+<p>A 17-year-old Hck4G whisperer just slipped a single velvet_postcard.zip into the dead-drop before her grandmother’s prayer bell rang.<br>No note just a trembling voice memo that plays once and dissolves:</p>
+<p>“she sent me the postcard from Lagos<br>promised love, then asked for my school fees<br>i didn’t send money<br>i kept the card<br>inside: three layers<br>first the tune is wrong<br>slide it down one key<br>then the paper is folded wrong<br>unfold it flat<br>then the ribbon hides the truth<br>unwrap it gently<br>tell my grandma the fees are still mine”<br>She used her last ₦4,000 to keep her WAEC registration alive.<br>She doesn’t know that at 07:00 AM ACDT the same postcard will auto-forward to 8,000 Melbourne teens via a fake scholarship bot.<br>She doesn’t know the final whisper under the ribbon is the seed phrase that can drain 400 student savings accounts, or fund 400 real scholarships if the right hands open it first.</p>
+<p>Hck4G is already holding the velvet at 06:13 AM because we don’t let grandmothers pray over empty fee receipts.<br>We hear the girl counting her coins in her sleep, dreaming of a desk with her name on it that only exists if we unfold the lie correctly.</p>
+<p>One zip. One postcard. Three lies wrapped in silk.<br>Forty-seven minutes before the first teen clicks “claim now” and the ribbon becomes a noose.</p>
+<p>Slide the tune. Unfold the paper. Unwrap the ribbon.<br>Read the heart she was meant to keep.</p>
+<p>This is my serial Number:<br>544756305830466e646g396d5<br>958526f58325d76636f3954595<br>75d6f58306f7564475679626g5<br>6305831567d5957646f43673g3g</p>
+<p>formular - C-EX-B</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="deepdecoder">deepdecoder</span></h2><h3><span id="desc">Desc</span></h3><p>Right now, a 14-year-old in Port Harcourt is staring at a wall of numbers on his cracked phone.<br>The boss just dropped the payload:<br>“Turn this into letters before sunrise or you’re out — and your family eats nothing tomorrow.”</p>
+<p>He doesn’t know those digits spell the exact amount a widow in Perth will lose at 9 AM.<br>He doesn’t know the next message after decoding will be a death threat.<br>He only knows the numbers won’t stop blinking until he cracks them.</p>
+<p>Hck4G was born for this silence —<br>the moment a child’s fingers hover over keys that could destroy two lives with one press.</p>
+<p>The string is long.<br>The pattern is brutal.<br>The clock is cruel.</p>
+<p>Decode what should never have been encoded.<br>Steal back one future before the numbers become a noose.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="ancient-roman-secret">ancient-roman-secret</span></h2><h3><span id="desc">Desc</span></h3><p>Somewhere tonight, a kid in a dimly lit room just sent a string of letters to a group chat.<br>The reply came instantly: “Perfect. No one outside the circle will ever read it.”</p>
+<p>He thinks it’s just a game.<br>He thinks the words are harmless.<br>He doesn’t know they’re already written on someone else’s grave.</p>
+<p>Hck4G lives in the space between that send button and the damage it will do.<br>We exist to intercept the message before it becomes a life sentence — for the sender and the soul on the other end.</p>
+<p>The text is short.<br>The method is ancient.<br>The consequence is forever.</p>
+<p>Read what should never have been written.<br>Pull one child back from the edge before the clock forgets them.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">j4&lt;piY(62&lt;0&lt;6WQ02?504@6P4650&lt;:5Q0Q92P60R960Q2&gt;6072R6062Q:=W03P@&lt;6?0E%6249%96&gt;%@g?4PWNR&#123;:T6QA</span><br></pre></td></tr></table></figure>
+<p>Break me if you can - It will be counted as roman adult abuse.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="pwn">pwn</span></h1><h2><span id="myapp">myapp</span></h2><h3><span id="desc">Desc</span></h3><p>In a quiet room in Calabar, the ceiling light just flickered once.</p>
+<p>A 17-year-old closed his laptop 36 minutes ago, still smiling at the single line he typed in the crew chat before leaving for evening lesson:</p>
+<p>just finished my classy application<br>basically unhackable<br>$150 if it survives the night<br>He used the advance to pay his JAMB coaching fees.<br>He doesn’t know that that same binary will sit on every point-of-sale terminal in Hobart’s waterfront restaurants.<br>He doesn’t know his “classy” fortress is the only thing keeping 300 waiters’ tips from disappearing before dessert.</p>
+<p>Hck4G is already holding the wine list because we know even the classiest table has a loose leg if you know exactly where to kick.<br>We hear the creaks, begging us to find the the source before the waiter’s smile does.</p>
+<p>One classy app.<br>Forty-one minutes before the first bill is printed and the tips start bleeding.</p>
+<p>Find out how class this app really is.<br>Find the flag to stop the attack.</p>
+<p>nc 15.206.70.2 8001</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="bird">bird</span></h2><h3><span id="desc">Desc</span></h3><p>Somewhere in Enugu the rain is drumming on a tin roof.</p>
+<p>A 17-year-old left his laptop open exactly 29 minutes ago. The last thing he typed before running to buy his mum akara was a single line in the crew chat:</p>
+<p>added a canary like the boss told me<br>if it sings &#x3D; we’re dead<br>if it shuts up &#x3D; $120 and new school shoes<br>He doesn’t know that at 13:00 PM ACDT the same binary will run on every ATM in Adelaide.<br>He doesn’t know the tiny bird he placed in the stack is the only thing keeping 40,000 pension cheques from vanishing before Christmas.</p>
+<p>Hck4G is listening to the rain because we know exactly how to make a canary sing without waking the boss.<br>We hear the akara sizzling, begging us to hush the bird before it screams.</p>
+<p>One binary.<br>One tiny bird guarding the vault.<br>Thirteen minutes before the first pensioner queues and the canary starts singing for the wrong audience.</p>
+<p>nc 15.206.70.2 5000</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="printer-still-jammed">printer-still-jammed</span></h2><h3><span id="desc">Desc</span></h3><p>In a stuffy room in Kumasi, the ceiling fan is spinning lies.</p>
+<p>A 22-year-old just hit upload 27 minutes ago and typed the proudest message of his life:</p>
+<p>found your issue<br>fixed it<br>much secure use of printf now :)<br>just made an extra $50<br>He used the bonus to buy his sister a new dress.<br>He doesn’t know that at 14:30 PM ACDT the same binary will power every airport kiosk in Perth.<br>He doesn’t know his “much secure” printf is the only thing keeping 15,000 boarding passes from printing tomorrow’s flight plans for the black market.</p>
+<p>Hck4G tilts the scales because we’ve seen “secure printf” before—right before it cried.</p>
+<p>One “Secure” binary.<br>Twenty-seven minutes before the first passenger scans a ticket that shouldn’t exist.</p>
+<p>Show it what “secure” really means.<br>Make the safe printf confess everything it swore to keep quiet.</p>
+<p>nc 15.206.70.2 4747</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="jammed-printer">jammed-printer</span></h2><h3><span id="desc">Desc</span></h3><p>In a corner room in Kumasi, the ceiling bulb just buzzed like a trapped mosquito.</p>
+<p>A 25-year-old pushed the final binary and typed one last message before heading to the market with the cash he just earned:</p>
+<p>printy printy printf<br>He used the money to buy extra pepper and a new school shirt.<br>He doesn’t know that at 14:15 PM ACDT the same binary will run on every ticket printer in Melbourne’s tram network.<br>He doesn’t know his this will be the only thing keeping 120,000 daily commuters from paying with their entire life stories.</p>
+<p>Hck4G is already typing the first format string at 13:51 PM because we love it when they brag about printf like it’s a toy.<br>We hear the pepper grinding in the mortar, begging us to make the printer speak the truth before it starts printing tomorrow’s nightmares.</p>
+<p>One chatty binary.<br>It tells secrets, flags—if you ask it nicely.<br>Ask it nicely and it might just give you the flag.</p>
+<p>nc 15.206.70.2 4646</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="getting-full">getting-full</span></h2><h3><span id="desc">Desc</span></h3><p>A 16-year-old left his laptop on 44 minutes ago.<br>The screen still glows with the last command he typed before running to buy water:</p>
+<h2><span id="x2fnc_listener-152067021337the-exact-no-of-bytes-feeds-meanymore-makes-me-choke">.&#x2F;nc_listener 15.206.70.2:1337.<br>the exact no. of bytes feeds me<br>anymore makes me choke</span></h2><p>Press enter to execute…<br>He doesn’t know that at 12:30 PM ACDT the same listener will open on every smart-fridge in Perth’s biggest hospital.<br>He doesn’t know the extra byte that makes him “choke” is the only thing keeping 200 patients breathing.</p>
+<p>Hck4G is already on it because we know exactly how many characters it takes to turn a choke into a confession.<br>We hear the water flowing, begging us to listen before the boss does.</p>
+<p>One listener.<br>One press of the enter key.<br>Nine minutes before the insulin pumps freeze and the sachets turn to handcuffs.</p>
+<p>Hack in and find the flag.<br>Quickly before he gets back to execute it!</p>
+<p>nc 15.206.70.2 1337</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="interpreter">interpreter</span></h2><h3><span id="desc">Desc</span></h3><p>In a small room in Benin City the ceiling fan just died again.</p>
+<p>A 16-year-old is staring at his first-ever C program, still proud from last night.<br>He posted the binary to the crew with a single note:</p>
+<p>“Learnt how to code in C recently<br> so i decided to make a mini interpreter<br> i don’t know how secured it is<br> help me check”<br>He used the $90 advance to buy himself a new pair of shoes.<br>He doesn’t know that at 13:30 PM ACDT the same binary will run on every library computer in Canberra.<br>He doesn’t know his “genius” interpreter is the only thing standing between 8,000 students and a lifetime of leaked exam papers.</p>
+<p>Hck4G is already typing the first sentence now because we know every kid who says “nothing can break it” is secretly begging the world to prove him wrong before the pot boils over with blood.</p>
+<p>One baby interpreter.<br>vulnerability.<br>Twenty-five minutes before the first student logs in and the tongue starts confessing secrets it was never meant to know.</p>
+<p>Speak to it in a language it wasn’t taught yet.<br>Make it spit out the flag instead of tomorrow’s future.</p>
+<p>nc 15.206.70.2 8000</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="register">register</span></h2><h3><span id="desc">Desc</span></h3><p>Register<br>300<br>Right now, in a dark corner of Ghana, a 17-year-old just uploaded the final binary to the crew’s server.<br>The boss sent one message:</p>
+<p>“Rules are simple:</p>
+<ul>
+<li>No root</li>
+<li>No shell</li>
+<li>No flag for anyone except me<br>Break one, you’re out. Break all, you’re dead.”<br>The kid followed every rule.<br>He chained the buffers, he locked the doors, he even added a smiley in the source comment</li>
+</ul>
+<p>He doesn’t know those same rules were written to be broken by someone who still believes in second chances.<br>He doesn’t know that at Hck4G CTF, the entire game is about to flip.</p>
+<p>Hck4G doesn’t play by syndicate rules. We rewrite them.<br>We turn “no shell” into “new beginning”.<br>We turn “no flag” into “no more chains”.</p>
+<p>One binary.<br>One set of “un”breakable rules.</p>
+<p>Break every rule they gave him.<br>Change the game before the game changes him forever.</p>
+<p>nc 15.206.70.2 9905</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="mgmt">mgmt</span></h2><h3><span id="desc">Desc</span></h3><p>A 17-year-old fell asleep on the mat 57 minutes ago, laptop still open.<br>The terminal glows with the last thing he wrote:</p>
+<p>.&#x2F;cat file.txt</p>
+<p>i show whatever logic you choose<br>but if you speak too loud<br>i forget who i am<br>and scream the real count<br>He’s clutching the $95 for his sister’s school fees like a lifeline.<br>He doesn’t know that at 12:45 PM every voting machine in Tasmania will run the same binary.<br>He doesn’t know “whatever logic you choose” means something entirely unrelated to the election.</p>
+<p>Hck4G is typing the loudest whisper at 12:33 PM because we know exactly how many decibels it takes to make a liar tell the truth.<br>We know the paycheck form is still blank, waiting for a future that isn’t written in disappearing ink.</p>
+<p>One binary.<br>Logical thinking.<br>Twelve minutes before the polls close and the echo becomes a scream that can’t be unsaid.</p>
+<p>nc 15.206.70.2 8003</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="steganography">steganography</span></h1><h2><span id="the_advocator">the_advocator</span></h2><h3><span id="desc">Desc</span></h3><p>The_Advocator<br>100<br>Somewhere in Ibadan the dawn is still a rumor.</p>
+<p>A 16-year-old Hck4G guardian just slid a USB with a single .rar file under the door of the safe house before his sister’s alarm rang.<br>There was a single note scribbled on it</p>
+<p>“not just a pic…”<br>He doesn’t know that at the secret inside will auto-unlock on every Nigerian embassy server worldwide.<br>He doesn’t know the diary in the margins holds the master passphrase that can freeze 42 syndicate wallets, or drain 3,000 pensioners if the wrong knock is used.</p>
+<p>Hck4G has already uploaded the file for you to analyse, because we know a single picture can speak 1,000 words.<br>…especially if we read between the pixels.</p>
+<p>One zip.<br>One photo.<br>Fifty-four minutes before the first embassy clerk logs in and the margins start bleeding.</p>
+<p>Find the words the picture is trying to speak.<br>Find the secret inside</p>
+<p>Download file here</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="paste_aza">paste_aza</span></h2><h3><span id="desc">Desc</span></h3><p>It appear that someone has gained access to Hck4G that is not hacking for good!</p>
+<p>We caught them and managed to snag one of the files they left behind, which should look fairly familiar</p>
+<p>You know our mission by now<br>You know who we are helping<br>You know what we are trying to stop</p>
+<p>Hck4G has already uploaded the file.<br>We hear the the regret in the voices of these cyber criminals from behind their screens and we won’t stop until we’ve made a difference.</p>
+<p>Download the file.<br>Find the flag.<br>Not long until the event ends!</p>
+<p>Stare until the pixels speak.<br>Download file here</p>
+<p>Made with 💘 by Th3_Se3k3r🥷.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="forensics">forensics</span></h1><h2><span id="pickers_back_door">pickers_back_door</span></h2><h3><span id="desc">Desc</span></h3><p>Pickers_Back_Door<br>200<br>Somewhere in a Kumasi cyber-café the lights just flickered twice.</p>
+<p>A 14-year-old just stole a single .pcap file and slipped it onto the dead-drop server before the owner woke up followed by one short message:</p>
+<p>“i watched the crew’s laptop for a few nights<br>the devices talk to each other<br>the chatter is subtle, but makes a lot of noise<br>there’s something suspiscious happening<br>…<br>…<br>tell my mum the rent is paid”<br>He used his last $100 to pay towards rent in advance.<br>He doesn’t know that at 06:30 AM ACDT info inside that pcap holds the key to stop an auto-load on every Victoria Police precinct server.<br>Hck4G is has already got the file inside a .zip for you to analyse, because we don’t let rent money vanish over bad ARP.<br>We hear the mum counting the naira in her sleep, dreaming of a roof that only stays if we read the local chatter right.</p>
+<p>A single pcap.<br>A secret hidden deep in the packets<br>Sixty-one minutes before the owners alarm goes off.</p>
+<p>Listen to the chatter<br>Look for anything suspiscious<br>Find the traffic origin</p>
+<p>Download file here</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="f1nding-cl1ents">f1nding-cl1ents</span></h2><h3><span id="desc">Desc</span></h3><p>F1nding-CL1ents<br>200<br>Somewhere in Tamale the market is still asleep.</p>
+<p>A 19-year-old recruit just dropped a single .zip into the dead-drop<br>He left no note—just a cracked voice memo that plays once and deletes itself:</p>
+<p>“Listen carefully:<br>not every client is a customer<br>not every request deserves a reply”<br>He just used his last $100 to buy her a new secondary-school uniform.<br>He realise the hidden flag in the .zip will auto-unpack on every Melbourne council server.<br>He doesn’t know the honest packets hold the master key that can lock out three syndicates—or open 1.2 million voter records if the wrong ears listen first.</p>
+<p>Hck4G is already inside the .zip file because we don’t let uniforms go unworn over bad decryption.<br>We hear the sister ironing the creases in her sleep, dreaming of a first day that only exists if we separate signal from static.</p>
+<p>Follow the honest voices in the noise<br>Trace their path<br>Uncover the truth</p>
+<p>Listen for the voices that don’t lie.<br>String the honest packets together—they spell the key in plaintext.</p>
+<p>Download file here</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="mobile-bapi">mobile-bapi</span></h2><h3><span id="desc">Desc</span></h3><p>Three minutes ago, a 16-year-old in Lagos flashed the final build onto a cheap Android burner.<br>The commandant slid the .apk across Telegram with one line:<br>“Hardcode the key. No one ever looks inside a school-grades app.”</p>
+<p>He did it in a matter of seconds.<br>He never knew that single string of characters is the master key to every victim’s private life tomorrow morning.<br>He only knew his mum’s rent is due at 7 AM and the crew pays on delivery.</p>
+<p>If they find out he left the back door wide open, his phone gets smashed and his mum’s rent doesn’t get paid again.<br>If they don’t, a thousand Melbourne teenagers wake up to leaked nudes and suicide threats.</p>
+<p>Hck4G was forged to stop this from ever being a decision in the first place.</p>
+<p>There’s a hidden key buried in the .apk file.</p>
+<p>The first victim’s phone just lit up with a push notification.</p>
+<p>Quick! Find the flag before the first scream hits the group chat.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="drums">drums</span></h2><h3><span id="desc">Desc</span></h3><p>A 15-year-old in Kumasi just hit send on a 10-second voice note.</p>
+<p>To his mum it’s a birthday beat of 39 drum hits on a plastic bucket.<br>To the syndicate it’s tonight’s drop, Hiding within each byte.</p>
+<p>He thinks the rhythm is just noise.<br>He doesn’t know it’s the sound of a Perth pensioner losing everything before breakfast.</p>
+<p>Hck4G was made to tune this heartbeat —<br>when a child’s drum solo becomes someone else’s funeral march.</p>
+<p>The file is tiny.<br>The beat is loud.<br>The countdown is real.</p>
+<p>Sometimes things are not as they appear.<br>Find the syndicate’s hidden message.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="frys-copypasta-nightmare">frys-copypasta-nightmare</span></h2><h3><span id="desc">Desc</span></h3><p>Fry was rushing through a “prove-you’re-human” check on a shady login page.</p>
+<p>One click.<br>Clipboard silently swapped.<br>Next thing he knows—$847 charged to his card for 500 BBQ gift vouchers he never ordered.</p>
+<p>Somewhere in Nigeria, a 15-year-old just earned $20 for pasting a single line of text.</p>
+<p>Hck4G refuses to let another kid grow up thinking copy-pasta scams are “easy money.”<br>Your job: reconstruct exactly what was in Fry’s clipboard the moment everything went wrong.</p>
+<p>Find the malicious string.<br>Submit it as the flag.<br>Prove how one overlooked paste can ruin two lives at once.</p>
+<p>Hunt to Capture the flag.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="dumpster">dumpster</span></h2><h3><span id="desc">Desc</span></h3><p>Seven minutes ago, an 18-year-old in Tema shut the lid on a battered Linux laptop and slipped out the door.<br>The boss had barked: “Leave the old drive in the drawer. Take the new one. Move.”</p>
+<p>He obeyed, but he forgot one thing.<br>Scattered across the filesystem sits a trail of files he was ordered to burn.<br>One of them holds the key the crew needs to bleed a Melbourne hospital dry.</p>
+<p>If they discover what he left behind, his little brother’s surgery money vanishes.<br>If they don’t, someone else’s life does.</p>
+<p>Hck4G stands in this gap—<br>the razor-thin space where a teenager’s mistake can still be turned into a second chance instead of a life sentence.</p>
+<p>The drive is still warm.<br>The files are still there.<br>The crew will be back any minute.</p>
+<p>See what you can find before they do.</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="osint">osint</span></h1><h2><span id="tenet">tenet</span></h2><h3><span id="desc">Desc</span></h3><p>Time is relative. We are not bound to any specific moment or location. Either way, Hck4G will not be wasting any of it letting young people be coerced into a life of crime by cyber criminals!<br>However… Just in case we ever did need to go back in time, I made a time machine. I left my first prototype near the location in this picture I took.</p>
+<p>Can you find it for me?<br>I think I parked it sometime in 2014?</p>
+<p>I’m sure it was around here</p>
+<p>The flag is: Hck4G{NUMBER PLATE OF A VEHICLE}</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="ghost-of-the-street">ghost-of-the-street</span></h2><h3><span id="desc">Desc</span></h3><p>Ghost-of-the-street<br>200<br>Somewhere in a Lagos safe house, a 25 year-old ghost just pulled the greatest recovery of his life.</p>
+<p>Seventeen hours ago he breached the crew’s cloud backup and exfiltrated a single Ghost+of+the+street.zip before the connection died. He knows this must be the location for the drop and if he finds it and send it to the crew, he doesn’t have to use his last $50 for food tonight.<br>He doesn’t know that at 06:00 AM the cartel will be waiting at the drop-zone to see who shows up.<br>He doesn’t know the drop is a micro-SD with the ledger that can jail 27 traffickers and free 180 kids before the shoes even scuff.</p>
+<p>Hck4G is already dragging the slider on Google Street because we don’t let honeypots destroy dreams.<br>We hear the ghost clicking away in his sleep, dreaming of a paycheck that doesn’t exists.</p>
+<p>One zip file.<br>One photo.<br>Only minutes before the ghost sends the crew the wrong location and he truly becomes a ghost forever.</p>
+<p>Find the location of the drop.<br>Submit the business name that lived there in 2010.</p>
+<p>Flag Format: <code>Hck4G{--_------}</code></p>
+<p>Download file here</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="dont-be-too-forgetful">dont-be-too-forgetful</span></h2><h3><span id="desc">Desc</span></h3><p>John Do did NOT finish his cyber-awareness training.<br>He just uploaded a photo of the office on Bluesky.</p>
+<p>The Gen-Z is the worst, I can’t tolerate his 6 7 brainrot thingy. who knows what else got leaked!!</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="theseeker">theseeker</span></h2><h3><span id="desc">Desc</span></h3><p>Sebastian Coulombe, a senior privileged user is suspected of having his account compromised.</p>
+<p>Seb holds elevated administrative rights across critical systems. New logins pop up everywhere, his account credential is probably lying in public. Can you find his hotmail credential?</p>
+<p>The flag is <code>Hck4G{Seb account password ending with 26f5}</code></p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="bridge">bridge</span></h2><h3><span id="desc">Desc</span></h3><p>Somewhere in Lagos, a 19-year-old ex-Yahoo boy turned Hck4G informant just went dark.</p>
+<p>His last act before vanishing was to send Officer Johnson a single photo—no caption, no voice note, just a bridge at golden hour.</p>
+<p>Forty-one hours ago he had whispered on an encrypted call:</p>
+<p>“if anything happens to me<br>the evidence is in the church locker<br>safe house is under the bridge on the hill<br>only this photo knows which one”<br>He doesn’t know the safe house under that bridge is the only place left hiding the ledger that can dismantle three syndicates and free 400 kids.</p>
+<p>Hck4G is staring at the bridge.png and we don’t let brothers disappear with school bags still empty.</p>
+<p>Find the name of the bridge and city<br>Forty-six minutes before the crew’s vans roll out and the wrong bridge burns.</p>
+<p>Flag Format: Hck4G:{————-<em>——</em>——}</p>
+<p>Download file here</p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h1><span id="web">web</span></h1><h2><span id="cloudy_scam">cloudy_scam</span></h2><h3><span id="desc">Desc</span></h3><p>Some where in the cloud, a throwaway app is running.</p>
+<p>It was built fast, deployed faster, and handed to a kid who was told “just click run.” They never explained what it really does. They never showed the damage it leaves behind.</p>
+<p>Hck4G refuses to let another teenager become tomorrow’s perpetrator because poverty left them no choice.</p>
+<p>Your job: Find the app. Break in. Take the flag that’s hiding.</p>
+<p>Every exploit you land is proof the cycle can be broken.</p>
+<p>Capture the flag. Be the protector they never had.</p>
+<p>Could this be the App?<br><a target="_blank" rel="noopener" href="https://cloudyscam.hck4g.org/" title="https:&#x2F;&#x2F;cloudyscam.hck4g.org&#x2F;">https://cloudyscam.hck4g.org/</a></p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+<h2><span id="first">first</span></h2><h3><span id="desc">Desc</span></h3><p>Right now, a 16-year-old in Abuja just finished writing the shopping app you’re looking at.<br>The syndicate paid him in mobile data and a promise:<br>“Add one hidden field. No one will ever notice. Just a note for the boss.”</p>
+<p>He doesn’t know that note contains tomorrow’s ransom demand.<br>He doesn’t know the next victim is someone’s grandmother in Melbourne.<br>He only knows his little sister needs school fees next week.</p>
+<p>Hck4G was created for this exact moment.<br>when one line of code decides whether a kid becomes a criminal or a protector.</p>
+<p>The basket is open.<br>The list looks innocent.<br>The secret is already inside.</p>
+<p>Find it before midnight becomes the timestamp on another life sentence.<br><a target="_blank" rel="noopener" href="https://siab.hck4g.org/login" title="https:&#x2F;&#x2F;siab.hck4g.org&#x2F;login">https://siab.hck4g.org/login</a></p>
+<h3><span id="key-points">Key Points:</span></h3><hr>
+</article><div class="post-copyright"><div class="copyright-cc-box"><i class="anzhiyufont anzhiyu-icon-copyright"></i></div><div class="post-copyright__author_box"><a class="post-copyright__author_img" href="/" title="头像"><img class="post-copyright__author_img_back" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg" title="头像" alt="头像"><img class="post-copyright__author_img_front" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg" title="头像" alt="头像"></a><div class="post-copyright__author_name">cvestone</div><div class="post-copyright__author_desc"></div></div><div class="post-copyright__post__info"><a class="post-copyright__original" title="This article is an original piece. Please pay attention to the copyright agreement!" href="https://cvestone.github.io/articles/wp/251112_hck4gCTF%20learning%20record.html">Original</a><a class="post-copyright-title"><span onclick="rm.copyPageUrl('https://cvestone.github.io/articles/wp/251112_hck4gCTF%20learning%20record.html')">251112_hck4gCTF learning record</span></a></div><div class="post-tools" id="post-tools"><div class="post-tools-left"><div class="rewardLeftButton"></div><div class="shareRight"><div class="share-link mobile"><div class="share-qrcode"><div class="share-button" title="Read this article on mobile"><i class="anzhiyufont anzhiyu-icon-qrcode"></i></div><div class="share-main"><div class="share-main-all"><div id="qrcode" title="https://cvestone.github.io/articles/wp/251112_hck4gCTF%20learning%20record.html"></div><div class="reward-dec">Read this article on mobile</div></div></div></div></div><div class="share-link weibo"><a class="share-button" target="_blank" href="https://service.weibo.com/share/share.php?title=251112_hck4gCTF learning record&amp;url=https://cvestone.github.io/articles/wp/251112_hck4gCTF%20learning%20record.html&amp;pic=https://imgapi.xl0408.top/index.php?_r_=8fe20584-bfea-ec67-cd97-97399e838a86" rel="external nofollow noreferrer noopener"><i class="anzhiyufont anzhiyu-icon-weibo"></i></a></div><script>function copyCurrentPageUrl() {
+  var currentPageUrl = window.location.href;
+  var input = document.createElement("input");
+  input.setAttribute("value", currentPageUrl);
+  document.body.appendChild(input);
+  input.select();
+  input.setSelectionRange(0, 99999);
+  document.execCommand("copy");
+  document.body.removeChild(input);
+}</script><div class="share-link copyurl"><div class="share-button" id="post-share-url" title="Copy Link" onclick="copyCurrentPageUrl()"><i class="anzhiyufont anzhiyu-icon-link"></i></div></div></div></div></div><div class="post-copyright__notice"><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0s</a> unless stating additionally.</span></div></div><div class="post-tools-right"><div class="tag_share"><div class="post-meta__box"><div class="post-meta__box__category-list"><a class="post-meta__box__categoryes" href="/categories/CTF-events/"><span class="categoryes-punctuation"> <i class="anzhiyufont anzhiyu-icon-inbox"></i></span>CTF events<span class="categoryesPageCount">10</span></a><a class="post-meta__box__categoryes" href="/categories/CTF-events/writeups/"><span class="categoryes-punctuation"> <i class="anzhiyufont anzhiyu-icon-inbox"></i></span>writeups<span class="categoryesPageCount">10</span></a></div><div class="post-meta__box__tag-list"><a class="post-meta__box__tags" href="/tags/Learning-Records/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>Learning Records<span class="tagsPageCount">10</span></a><a class="post-meta__box__tags" href="/tags/Continuously-Updated/"><span class="tags-punctuation"> <i class="anzhiyufont anzhiyu-icon-tag"></i></span>Continuously Updated<span class="tagsPageCount">10</span></a></div></div></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/articles/wp/251116_MCTF_quals%20learning%20record.html"><img class="prev-cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=0e80d1e7-9972-d7b5-4493-3c9c581006e7" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">251116_M*CTF_quals learning record</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="anzhiyufont anzhiyu-icon-thumbs-up fa-fw" style="font-size: 1.5rem; margin-right: 4px"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/articles/wp/240705_downunderCTF%20learning%20record.html" title="240705_downunderCTF learning record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=8388f6cd-d26a-29c4-19f3-469c9fce25c7" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-17</div><div class="title">240705_downunderCTF learning record</div></div></a></div><div><a href="/articles/wp/251016_QnQSecCTF%20learning%20record.html" title="251016_QnQSecCTF learning record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=9231cf89-6ca6-8441-b653-77e8bd0a51d8" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-17</div><div class="title">251016_QnQSecCTF learning record</div></div></a></div><div><a href="/articles/wp/250914_uwsp_POCTF%20learning%20record.html" title="250914_uwsp_POCTF learning record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=d33f79c3-a0bc-3a9d-44bd-2e8d8622b164" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-17</div><div class="title">250914_uwsp_POCTF learning record</div></div></a></div><div><a href="/articles/wp/251030_dragosCTF%20learning%20record.html" title="251030_dragosCTF learning record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=b03a19d2-b38c-89aa-5973-ebb09c8294fd" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-17</div><div class="title">251030_dragosCTF learning record</div></div></a></div><div><a href="/articles/wp/251025_deadfaceCTF%20learning%20record.html" title="251025_deadfaceCTF Learning Record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=b4d465cb-374c-0c94-3d4c-1a2986e3685c" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-17</div><div class="title">251025_deadfaceCTF Learning Record</div></div></a></div><div><a href="/articles/wp/251109_RootCipherCTF%20learning%20record.html" title="251109_RootCipherCTF learning record"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=0b8aed74-232e-3ecd-be54-54527c448f92" alt="cover"><div class="content is-center"><div class="date"><i class="anzhiyufont anzhiyu-icon-history fa-fw"></i> 2025-11-17</div><div class="title">251109_RootCipherCTF learning record</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="anzhiyufont anzhiyu-icon-comments"></i><span> Comment</span></div><div class="comment-randomInfo"><a onclick="anzhiyu.addRandomCommentInfo()" href="javascript:void(0)" style="display: none">匿名评论</a><a href="/privacy" style="margin-left: 4px">Privacy Policy</a></div><div class="comment-tips" id="comment-tips"><span>✅ You don't need to delete empty lines, just comment to get the best display effect.</span></div></div><div class="comment-wrap"><div><div id="twikoo-wrap"></div></div></div></div><div class="comment-barrage"></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="card-content"><div class="author-info__sayhi" id="author-info__sayhi" onclick="anzhiyu.changeSayHelloText()"></div><div class="author-info-avatar"><img class="avatar-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://raw.githubusercontent.com/cvestone/stonepic/main/cvestone.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-status"><img class="g-status" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://cdn.discordapp.com/emojis/1359534662757777680.webp?size=240" alt="status"/></div></div><div class="author-info__description">cvestone's blog</div><div class="author-info__bottom-group"><a class="author-info__bottom-group-left" href="/about"><h1 class="author-info__name">cvestone</h1><div class="author-info__desc"></div></a><div class="card-info-social-icons is-center"><a class="social-icon faa-parent animated-hover" href="https://github.com/cvestone" target="_blank" title="Github"><i class="anzhiyufont anzhiyu-icon-github"></i></a></div></div></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bullhorn anzhiyu-shake"></i><span>Announcement</span></div><div class="announcement_content"><ul> <li>Full-stack CTF player consolidating knowledge. For any errors or issues in the article, suggestions and discussions are welcome🎃</li>
+</ul></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-bars"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">In the full-stack CTF player program, this article will be continuously updated with recreated learning content</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">2.</span> <span class="toc-text">Attachments</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">3.</span> <span class="toc-text">EventInfo</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">3.1.</span> <span class="toc-text">ScoreBoard</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">4.</span> <span class="toc-text">crypto</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.1.</span> <span class="toc-text">confirm-wire-check</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.2.</span> <span class="toc-text">deepdecoder</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">4.3.</span> <span class="toc-text">ancient-roman-secret</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.3.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">4.3.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">5.</span> <span class="toc-text">pwn</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.1.</span> <span class="toc-text">myapp</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.2.</span> <span class="toc-text">bird</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.3.</span> <span class="toc-text">printer-still-jammed</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.3.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.3.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.4.</span> <span class="toc-text">jammed-printer</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.4.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.4.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.5.</span> <span class="toc-text">getting-full</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.5.1.</span> <span class="toc-text">Desc</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.6.</span> <span class="toc-text">.&#x2F;nc_listener 15.206.70.2:1337.the exact no. of bytes feeds meanymore makes me choke</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.6.1.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.7.</span> <span class="toc-text">interpreter</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.7.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.7.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.8.</span> <span class="toc-text">register</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.8.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.8.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">5.9.</span> <span class="toc-text">mgmt</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.9.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">5.9.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">6.</span> <span class="toc-text">steganography</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">6.1.</span> <span class="toc-text">the_advocator</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">6.2.</span> <span class="toc-text">paste_aza</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">6.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">7.</span> <span class="toc-text">forensics</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.1.</span> <span class="toc-text">pickers_back_door</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.2.</span> <span class="toc-text">f1nding-cl1ents</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.3.</span> <span class="toc-text">mobile-bapi</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.3.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.3.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.4.</span> <span class="toc-text">drums</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.4.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.4.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.5.</span> <span class="toc-text">frys-copypasta-nightmare</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.5.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.5.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">7.6.</span> <span class="toc-text">dumpster</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.6.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">7.6.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">8.</span> <span class="toc-text">osint</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.1.</span> <span class="toc-text">tenet</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.2.</span> <span class="toc-text">ghost-of-the-street</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.3.</span> <span class="toc-text">dont-be-too-forgetful</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.3.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.3.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.4.</span> <span class="toc-text">theseeker</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.4.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.4.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">8.5.</span> <span class="toc-text">bridge</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.5.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">8.5.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">9.</span> <span class="toc-text">web</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">9.1.</span> <span class="toc-text">cloudy_scam</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.1.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.1.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-number">9.2.</span> <span class="toc-text">first</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.2.1.</span> <span class="toc-text">Desc</span></a></li><li class="toc-item toc-level-3"><a class="toc-link"><span class="toc-number">9.2.2.</span> <span class="toc-text">Key Points:</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/251112_hck4gCTF%20learning%20record.html" title="251112_hck4gCTF learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=8fe20584-bfea-ec67-cd97-97399e838a86" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="251112_hck4gCTF learning record"/></a><div class="content"><a class="title" href="/articles/wp/251112_hck4gCTF%20learning%20record.html" title="251112_hck4gCTF learning record">251112_hck4gCTF learning record</a><time datetime="2025-11-17T00:00:00.000Z" title="Created 2025-11-17 00:00:00">2025-11-17</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/251116_MCTF_quals%20learning%20record.html" title="251116_M*CTF_quals learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=0e80d1e7-9972-d7b5-4493-3c9c581006e7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="251116_M*CTF_quals learning record"/></a><div class="content"><a class="title" href="/articles/wp/251116_MCTF_quals%20learning%20record.html" title="251116_M*CTF_quals learning record">251116_M*CTF_quals learning record</a><time datetime="2025-11-14T00:00:00.000Z" title="Created 2025-11-14 00:00:00">2025-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/251115_PwnSecCTF%20learning%20record.html" title="251115_PwnSecCTF learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=120b6627-adda-288f-8f88-4ab091dc9849" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="251115_PwnSecCTF learning record"/></a><div class="content"><a class="title" href="/articles/wp/251115_PwnSecCTF%20learning%20record.html" title="251115_PwnSecCTF learning record">251115_PwnSecCTF learning record</a><time datetime="2025-11-14T00:00:00.000Z" title="Created 2025-11-14 00:00:00">2025-11-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/240705_downunderCTF%20learning%20record.html" title="240705_downunderCTF learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=8388f6cd-d26a-29c4-19f3-469c9fce25c7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="240705_downunderCTF learning record"/></a><div class="content"><a class="title" href="/articles/wp/240705_downunderCTF%20learning%20record.html" title="240705_downunderCTF learning record">240705_downunderCTF learning record</a><time datetime="2025-11-13T00:00:00.000Z" title="Created 2025-11-13 00:00:00">2025-11-13</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/articles/wp/250914_uwsp_POCTF%20learning%20record.html" title="250914_uwsp_POCTF learning record"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://imgapi.xl0408.top/index.php?_r_=d33f79c3-a0bc-3a9d-44bd-2e8d8622b164" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="250914_uwsp_POCTF learning record"/></a><div class="content"><a class="title" href="/articles/wp/250914_uwsp_POCTF%20learning%20record.html" title="250914_uwsp_POCTF learning record">250914_uwsp_POCTF learning record</a><time datetime="2025-11-13T00:00:00.000Z" title="Created 2025-11-13 00:00:00">2025-11-13</time></div></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div id="workboard"><div id="runtimeTextTip"></div></div><p id="ghbdages"><a class="github-badge" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" style="margin-inline:5px" data-title="This site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License." title="This site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@2.2.0/img/badge/Copyright-BY-NC-SA.svg" alt="This site is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License."/></a><a class="github-badge" target="_blank" href="https://hexo.anheyu.com/" style="margin-inline:5px" data-title="本站使用AnZhiYu主题" title="本站使用AnZhiYu主题"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.9/img/Theme-AnZhiYu-2E67D3.svg" alt="本站使用AnZhiYu主题"/></a></p></div><div id="footer-bar"><div class="footer-bar-links"><div class="footer-bar-left"><div id="footer-bar-tips"><div class="copyright">&copy;2025 By <a class="footer-bar-link" href="/" title="cvestone" target="_blank">cvestone</a></div></div><div id="footer-type-tips"></div></div><div class="footer-bar-right"><a class="footer-bar-link" target="_blank" rel="noopener" href="https://github.com/anzhiyu-c/hexo-theme-anzhiyu" title="Thanks for blog theme from anzhiyu.">Thanks for blog theme from anzhiyu.</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">Articles</div><div class="length-num">10</div></a><a href="/tags/" title="tag"><div class="headline">Tags</div><div class="length-num">3</div></a><a href="/categories/" title="category"><div class="headline">Categories</div><div class="length-num">2</div></a></div><span class="sidebar-menu-item-title">Function</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="Display Mode"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>Display Mode</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title"></div><div class="back-menu-list"><a class="back-menu-item" href="/null"><img class="back-menu-item-icon"/><span class="back-menu-item-text"></span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">project</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="AnzhiyuImages"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="AnzhiyuImages"/><span class="back-menu-item-text">AnzhiyuImages</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Home</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> BackHomepage</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Articles</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> Tunnel</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> Category</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> Tag</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> FriendLinks</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/link/"><i class="anzhiyufont anzhiyu-icon-link faa-tada" style="font-size: 0.9em;"></i><span> FriendSpace</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/fcircle/"><i class="anzhiyufont anzhiyu-icon-artstation faa-tada" style="font-size: 0.9em;"></i><span> Moments</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/comments/"><i class="anzhiyufont anzhiyu-icon-envelope faa-tada" style="font-size: 0.9em;"></i><span> MessageBoard</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> Mine</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> MusicHall</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/bangumis/"><i class="anzhiyufont anzhiyu-icon-bilibili faa-tada" style="font-size: 0.9em;"></i><span> AnimationPage</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/album/"><i class="anzhiyufont anzhiyu-icon-images faa-tada" style="font-size: 0.9em;"></i><span> Album</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/air-conditioner/"><i class="anzhiyufont anzhiyu-icon-fan faa-tada" style="font-size: 0.9em;"></i><span> AirConditioner</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> About</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="anzhiyufont anzhiyu-icon-paper-plane faa-tada" style="font-size: 0.9em;"></i><span> AboutMe</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/essay/"><i class="anzhiyufont anzhiyu-icon-lightbulb faa-tada" style="font-size: 0.9em;"></i><span> Essay</span></a></li><li><a class="site-page child faa-parent animated-hover" href="javascript:toRandomPost()"><i class="anzhiyufont anzhiyu-icon-shoe-prints1 faa-tada" style="font-size: 0.9em;"></i><span> Wander</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="anzhiyufont anzhiyu-icon-dice-d20 faa-tada" style="font-size: 0.9em;"></i><span> My Arsenal</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/Continuously-Updated/" style="font-size: 0.88rem;">Continuously Updated<sup>10</sup></a><a href="/tags/Learning-Records/" style="font-size: 0.88rem;">Learning Records<sup>10</sup></a><a href="/tags/ctftime/" style="font-size: 0.88rem;">ctftime<sup>8</sup></a></div></div><hr/></div></div><div id="keyboard-tips"><div class="keyboardTitle">Blog Shortcuts</div><div class="keybordList"><div class="keybordItem"><div class="keyGroup"><div class="key">shift K</div></div><div class="keyContent"><div class="content">Disable</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift A</div></div><div class="keyContent"><div class="content">On/Off</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift M</div></div><div class="keyContent"><div class="content">Play/Pause</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift D</div></div><div class="keyContent"><div class="content">Dark/Light</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift S</div></div><div class="keyContent"><div class="content">Site</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift R</div></div><div class="keyContent"><div class="content">Random</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift H</div></div><div class="keyContent"><div class="content">Return</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift F</div></div><div class="keyContent"><div class="content">Friendship</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift L</div></div><div class="keyContent"><div class="content">FriendLinks</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift P</div></div><div class="keyContent"><div class="content">About</div></div></div><div class="keybordItem"><div class="keyGroup"><div class="key">shift I</div></div><div class="keyContent"><div class="content">Original/Site</div></div></div></div></div><div id="rightside"><div id="rightside-config-hide"></div><div id="rightside-config-show"><button id="go-up" type="button" title="Back To Top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button><button id="go-down" type="button" title="Back To Down"><i class="anzhiyufont anzhiyu-icon-arrow-down"></i></button></div></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>Copy Selected Text</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>Paste Text</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>Quote In Comments</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>Open In New Window</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>Copy Link Addr</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>Copy This Image</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>Download This Image</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>Open Image In New Window</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>Site Search</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>Baidu Search</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>Play Music</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>Previous Track</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>Next Track</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;null&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>Check All Songs</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>Copy Songs Name</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>Just wandering around</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>Blog Categories</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>Article Tags</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>Copy Link Addr</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">Close Top Comments</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">Dark Mode</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>Change To Traditional Chinese</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@5.0.28/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.cbd.int/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><script>// 消除控制台打印
+var HoldLog = console.log;
+console.log = function () {};
+let now1 = new Date();
+queueMicrotask(() => {
+  const Log = function () {
+    HoldLog.apply(console, arguments);
+  }; //在恢复前输出日志
+  const grt = new Date("04/17/2025 00:00:00"); //此处修改你的建站时间或者网站上线时间
+  now1.setTime(now1.getTime() + 250);
+  const days = (now1 - grt) / 1000 / 60 / 60 / 24;
+  const dnum = Math.floor(days);
+  const ascll = [
+    `欢迎使用安知鱼!`,
+    `生活明朗, 万物可爱`,
+    `
+        
+       █████╗ ███╗   ██╗███████╗██╗  ██╗██╗██╗   ██╗██╗   ██╗
+      ██╔══██╗████╗  ██║╚══███╔╝██║  ██║██║╚██╗ ██╔╝██║   ██║
+      ███████║██╔██╗ ██║  ███╔╝ ███████║██║ ╚████╔╝ ██║   ██║
+      ██╔══██║██║╚██╗██║ ███╔╝  ██╔══██║██║  ╚██╔╝  ██║   ██║
+      ██║  ██║██║ ╚████║███████╗██║  ██║██║   ██║   ╚██████╔╝
+      ╚═╝  ╚═╝╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝╚═╝   ╚═╝    ╚═════╝
+        
+        `,
+    "已上线",
+    dnum,
+    "天",
+    "©2025 By 安知鱼 V1.6.15",
+  ];
+  const ascll2 = [`NCC2-036`, `调用前置摄像头拍照成功，识别为【小笨蛋】.`, `Photo captured: `, `🤪`];
+
+  setTimeout(
+    Log.bind(
+      console,
+      `\n%c${ascll[0]} %c ${ascll[1]} %c ${ascll[2]} %c${ascll[3]}%c ${ascll[4]}%c ${ascll[5]}\n\n%c ${ascll[6]}\n`,
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      "color:#425AEF",
+      "",
+      "color:#425AEF",
+      ""
+    )
+  );
+  setTimeout(
+    Log.bind(
+      console,
+      `%c ${ascll2[0]} %c ${ascll2[1]} %c \n${ascll2[2]} %c\n${ascll2[3]}\n`,
+      "color:white; background-color:#4fd953",
+      "",
+      "",
+      'background:url("https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/tinggge.gif") no-repeat;font-size:450%'
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c WELCOME %c 你好，小笨蛋.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(
+      console,
+      "%c ⚡ Powered by 安知鱼 %c 你正在访问 cvestone 的博客.",
+      "color:white; background-color:#f0ad4e",
+      ""
+    )
+  );
+
+  setTimeout(Log.bind(console, "%c W23-12 %c 你已打开控制台.", "color:white; background-color:#4f90d9", ""));
+
+  setTimeout(
+    console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
+  );
+});</script><script async src="/anzhiyu/random.js"></script><script async="async">(function () {
+  var grt = new Date("04/17/2025 00:00:00"); //设置网站上线时间
+  var now = new Date();
+  var dnum;
+  var hnum;
+  var mnum;
+  var snum;
+  var nowHour;
+
+  // 计算并更新天数、小时数、分钟数和秒数
+  function updateTime() {
+    now = new Date(); // 更新 now 的值
+    nowHour = now.getHours(); // 更新 nowHour 的值
+    var days = (now - grt) / 1000 / 60 / 60 / 24;
+    dnum = Math.floor(days);
+    var hours = (now - grt) / 1000 / 60 / 60 - 24 * dnum;
+    hnum = Math.floor(hours);
+    if (String(hnum).length == 1) {
+      hnum = "0" + hnum;
+    }
+    var minutes = (now - grt) / 1000 / 60 - 24 * 60 * dnum - 60 * hnum;
+    mnum = Math.floor(minutes);
+    if (String(mnum).length == 1) {
+      mnum = "0" + mnum;
+    }
+    var seconds = (now - grt) / 1000 - 24 * 60 * 60 * dnum - 60 * 60 * hnum - 60 * mnum;
+    snum = Math.round(seconds);
+    if (String(snum).length == 1) {
+      snum = "0" + snum;
+    }
+  }
+
+  // 更新网页中显示的网站运行时间
+  function updateHtml() {
+    const footer = document.getElementById("footer");
+    if (!footer) return
+    let currentTimeHtml = "";
+    if (nowHour < 18 && nowHour >= 9) {
+      // 如果是上班时间，默认就是"安知鱼-上班摸鱼中.svg"图片，不需要更改
+      currentTimeHtml = `OMG This site has worked ${dnum} d<span id='runtime'> ${hnum} hr ${mnum} min ${snum} s </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    } else {
+      // 如果是下班时间，插入"安知鱼-下班啦.svg"图片
+      let img = document.querySelector("#workboard .workSituationImg");
+      if (img != null) {
+        img.src = "";
+        img.title = "";
+        img.alt = "";
+      }
+
+      currentTimeHtml = `OMG This site has worked ${dnum} d<span id='runtime'> ${hnum} hr ${mnum} min ${snum} s </span><i class='anzhiyufont anzhiyu-icon-heartbeat' style='color:red'></i>`;
+    }
+
+    if (document.getElementById("runtimeTextTip")) {
+      document.getElementById("runtimeTextTip").innerHTML = currentTimeHtml;
+    }
+  }
+
+  setInterval(() => {
+    updateTime();
+    updateHtml();
+  }, 1000);
+})();</script><div class="js-pjax"><script>(() => {
+  const init = () => {
+    twikoo.init(Object.assign({
+      el: '#twikoo-wrap',
+      envId: 'https://twico-cvestones-projects.vercel.app',
+      region: 'ap-shanghai',
+      onCommentLoaded: () => {
+        anzhiyu.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
+      }
+    }, null))
+  }
+
+  const loadTwikoo = () => {
+    if (typeof twikoo === 'object') setTimeout(runFn,0)
+    else getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runFn)
+  }
+
+  const getCount = () => {
+    const countELement = document.getElementById('twikoo-count')
+    if(!countELement) return
+    twikoo.getCommentsCount({
+      envId: 'https://twico-cvestones-projects.vercel.app',
+      region: 'ap-shanghai',
+      urls: [window.location.pathname],
+      includeReply: false
+    }).then(res => {
+      countELement.textContent = res[0].count
+    }).catch(err => {
+      console.error(err)
+    })
+  }
+
+  const runFn = () => {
+    init();
+    GLOBAL_CONFIG_SITE.isPost && getCount()
+  }
+
+  if ('Twikoo' === 'Twikoo' || !false) {
+    if (false) anzhiyu.loadComment(document.getElementById('twikoo-wrap'), loadTwikoo)
+    else {
+      loadTwikoo()
+    }
+  } else {
+    window.loadOtherComment = loadTwikoo
+  }
+})()</script><input type="hidden" name="page-type" id="page-type" value="post"></div><script>window.addEventListener('load', () => {
+  const changeContent = (content) => {
+    if (content === '') return content
+
+    content = content.replace(/<img.*?src="(.*?)"?[^\>]+>/ig, '[image]') // replace image link
+    content = content.replace(/<a[^>]+?href=["']?([^"']+)["']?[^>]*>([^<]+)<\/a>/gi, '[link]') // replace url
+    content = content.replace(/<pre><code>.*?<\/pre>/gi, '[code]') // replace code
+    content = content.replace(/<[^>]+>/g,"") // remove html tag
+
+    if (content.length > 150) {
+      content = content.substring(0,150) + '...'
+    }
+    return content
+  }
+
+  const getComment = () => {
+    const runTwikoo = () => {
+      twikoo.getRecentComments({
+        envId: 'https://twico-cvestones-projects.vercel.app',
+        region: 'ap-shanghai',
+        pageSize: 5,
+        includeReply: true
+      }).then(function (res) {
+        const twikooArray = res.map(e => {
+          return {
+            'content': changeContent(e.comment),
+            'avatar': e.avatar,
+            'nick': e.nick,
+            'url': e.url + '#' + e.id,
+            'date': new Date(e.created).toISOString()
+          }
+        })
+
+        saveToLocal.set('twikoo-newest-comments', JSON.stringify(twikooArray), 10/(60*24))
+        generateHtml(twikooArray)
+      }).catch(function (err) {
+        const $dom = document.querySelector('#card-newest-comments .aside-list')
+        $dom.textContent= "Unable to get the data, please make sure the settings are correct."
+      })
+    }
+
+    if (typeof twikoo === 'object') {
+      runTwikoo()
+    } else {
+      getScript('https://cdn.cbd.int/twikoo@1.6.44/dist/twikoo.all.min.js').then(runTwikoo)
+    }
+  }
+
+  const generateHtml = array => {
+    let result = ''
+
+    if (array.length) {
+      for (let i = 0; i < array.length; i++) {
+        result += '<div class=\'aside-list-item\'>'
+
+        if (true) {
+          const name = 'data-lazy-src'
+          result += `<a href='${array[i].url}' class='thumbnail'><img ${name}='${array[i].avatar}' alt='${array[i].nick}'><div class='name'><span>${array[i].nick} </span></div></a>`
+        }
+        
+        result += `<div class='content'>
+        <a class='comment' href='${array[i].url}' title='${array[i].content}'>${array[i].content}</a>
+        <time datetime="${array[i].date}">${anzhiyu.diffDate(array[i].date, true)}</time></div>
+        </div>`
+      }
+    } else {
+      result += 'No Comment'
+    }
+
+    let $dom = document.querySelector('#card-newest-comments .aside-list')
+    $dom && ($dom.innerHTML= result)
+    window.lazyLoadInstance && window.lazyLoadInstance.update()
+    window.pjax && window.pjax.refresh($dom)
+  }
+
+  const newestCommentInit = () => {
+    if (document.querySelector('#card-newest-comments .aside-list')) {
+      const data = saveToLocal.get('twikoo-newest-comments')
+      if (data) {
+        generateHtml(JSON.parse(data))
+      } else {
+        getComment()
+      }
+    }
+  }
+
+  newestCommentInit()
+  document.addEventListener('pjax:complete', newestCommentInit)
+})</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://cdn.cbd.int/qrcodejs@1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script defer="defer" id="ribbon" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="true" data-click="false"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="true" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = false;
+POWERMODE.mobile = true;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.cbd.int/butterfly-extsrc@1.1.3/dist/click-show-text.min.js" data-mobile="true" data-text="SYSTEM BREACHED 🔥,QUANTUM ENCRYPTION BYPASSED ⚡,NEURAL NETWORK INFILTRATED 🧠,DARKNET ACCESS ACTIVATED 🌑,BIO-METRIC OVERRIDE 🧬,SATELLITE HIJACKED 🛰️,AI GUARDIAN NEUTRALIZED 🤖,CYBER GHOST PROTOCOL 👻,QUANTUM TUNNEL ESTABLISHED 🌀,HOLOGRAPHIC DECOY DEPLOYED ✨,NEURO-LINK INTERCEPTED 🔗,DIMENSIONAL FIREWALL PENETRATED 🌌" data-fontsize="22px" data-random="true" async="async"></script><script src="//code.tidio.co/lifmwojulpmjnrgrsualenpaywfwrcls.js" async="async"></script><script>(() => {
+  const isChatBtn = true
+  const isChatHideShow = true
+
+  if (isChatBtn) {
+    let isShow = false
+    const close = () => {
+      window.tidioChatApi.hide()
+      isShow = false
+      document.body.style.position = 'relative';
+      document.documentElement.style.overflow = 'auto'
+    }
+    
+    const open = () => {
+      window.tidioChatApi.open()
+      window.tidioChatApi.show()
+      isShow = true
+    }
+
+    const onTidioChatApiReady = () => {
+      window.tidioChatApi.hide()
+      window.tidioChatApi.on("close", close)
+    }
+    if (window.tidioChatApi) {
+      window.tidioChatApi.on("ready", onTidioChatApiReady)
+    } else {
+      document.addEventListener("tidioChat-ready", onTidioChatApiReady)
+    }
+
+    window.chatBtnFn = () => {
+      if (!window.tidioChatApi) return
+      isShow ? close() : open()
+    }
+  } else if (isChatHideShow) {
+    window.chatBtn = {
+      hide: () => {
+        window.tidioChatApi && window.tidioChatApi.hide()
+      },
+      show: () => {
+        window.tidioChatApi && window.tidioChatApi.show()
+      }
+    }
+  }
+})()</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["meta[property=\"og:image\"]","meta[property=\"og:title\"]","meta[property=\"og:url\"]","meta[property=\"og:type\"]","meta[property=\"og:site_name\"]","meta[property=\"og:description\"]","head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+  // removeEventListener scroll 
+  anzhiyu.removeGlobalFnEvent('pjax')
+  anzhiyu.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script charset="UTF-8" src="https://cdn.cbd.int/anzhiyu-theme-static@1.1.5/accesskey/accesskey.js"></script></div><div id="popup-window"><div class="popup-window-title">通知</div><div class="popup-window-divider"></div><div class="popup-window-content"><div class="popup-tip">你好呀</div><div class="popup-link"><i class="anzhiyufont anzhiyu-icon-arrow-circle-right"></i></div></div></div></body></html>
